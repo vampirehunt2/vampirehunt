@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3A5CC000-FABC-4C7A-A0E9-08A2513B9A3C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VH.Engine</RootNamespace>
+    <AssemblyName>VH.Engine</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Configuration\Keybindings.cs" />
+    <Compile Include="Configuration\Options.cs" />
+    <Compile Include="Display\BufferedWindow.cs" />
+    <Compile Include="Display\AbstractEntity.cs" />
+    <Compile Include="Display\CP437.cs" />
+    <Compile Include="Display\ExtendedWindow.cs" />
+    <Compile Include="Display\LetterMenu.cs" />
+    <Compile Include="Display\MessageWindow.cs" />
+    <Compile Include="Display\ScrollingVerticalMessageWindow.cs" />
+    <Compile Include="Display\SystemConsole.cs" />
+    <Compile Include="Display\VerticalMessageWindow.cs" />
+    <Compile Include="Display\YesNoMenu.cs" />
+    <Compile Include="Game\GameController.cs" />
+    <Compile Include="Levels\Cell.cs" />
+    <Compile Include="Levels\SplitOrientation.cs" />
+    <Compile Include="Levels\FloodedDungeonMapGenerator.cs" />
+    <Compile Include="Levels\ForestMapGenerator.cs" />
+    <Compile Include="Levels\Level.cs" />
+    <Compile Include="Levels\LevelGenerator.cs" />
+    <Compile Include="Levels\LevelPersistencyHelper.cs" />
+    <Compile Include="Levels\MazeMapGenerator.cs" />
+    <Compile Include="Levels\Passage.cs" />
+    <Compile Include="Levels\Position.cs" />
+    <Compile Include="Levels\RiverGenerator.cs" />
+    <Compile Include="Levels\Room.cs" />
+    <Compile Include="Levels\Step.cs" />
+    <Compile Include="Levels\Terrain.cs" />
+    <Compile Include="Levels\TownMapGenerator.cs" />
+    <Compile Include="LineOfSight\AbstractFieldOfVision.cs" />
+    <Compile Include="LineOfSight\RaycastingFieldOfVision.cs" />
+    <Compile Include="LineOfSight\HardcodedShadowcastingFieldOfVision.cs" />
+    <Compile Include="LineOfSight\XRayFieldOfVision.cs" />
+    <Compile Include="Pathfinding\DijkstraPathfinder.cs" />
+    <Compile Include="Pathfinding\Path.cs" />
+    <Compile Include="Pathfinding\Pathfinder.cs" />
+    <Compile Include="Pathfinding\SimplePathfinder.cs" />
+    <Compile Include="Persistency\AbstractPersistent.cs" />
+    <Compile Include="Persistency\IPersistent.cs" />
+    <Compile Include="Persistency\PersistentFactory.cs" />
+    <Compile Include="Persistency\XmlHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Display\IConsole.cs" />
+    <Compile Include="Display\Menu.cs" />
+    <Compile Include="Display\MessageManager.cs" />
+    <Compile Include="Levels\ViewPort.cs" />
+    <Compile Include="Display\Window.cs" />
+    <Compile Include="Levels\DungeonMapGenerator.cs" />
+    <Compile Include="Levels\Map.cs" />
+    <Compile Include="Levels\AbstractMapGenerator.cs" />
+    <Compile Include="Random\Rng.cs" />
+    <Compile Include="Random\SystemRng.cs" />
+    <Compile Include="Time\ScheduledEvent.cs" />
+    <Compile Include="Time\TimeManager.cs" />
+    <Compile Include="Tools\AssemblyCache.cs" />
+    <Compile Include="Tools\NumberFormatter.cs" />
+    <Compile Include="Translations\Translator.cs" />
+    <Compile Include="World\Beings\Actions\AttackAction.cs" />
+    <Compile Include="World\Beings\Actions\CloseDoorAction.cs" />
+    <Compile Include="World\Beings\Actions\MoveAction.cs" />
+    <Compile Include="World\Beings\Actions\OpenDoorAction.cs" />
+    <Compile Include="World\Beings\Actions\PickUpAction.cs" />
+    <Compile Include="World\Beings\Actions\TakeStairsAction.cs" />
+    <Compile Include="World\Beings\Actions\WaitAction.cs" />
+    <Compile Include="World\Beings\AI\BaseAi.cs" />
+    <Compile Include="World\Beings\AI\ChaseBehavior.cs" />
+    <Compile Include="World\Beings\AI\FleeBehavior.cs" />
+    <Compile Include="World\Beings\AI\NeutralBehavior.cs" />
+    <Compile Include="World\Beings\AI\OponentDependantBehaviour.cs" />
+    <Compile Include="World\Beings\AI\Stimuli\AttackStimulus.cs" />
+    <Compile Include="World\Beings\ExtendedStatSet.cs" />
+    <Compile Include="World\Beings\IProfessionBeing.cs" />
+    <Compile Include="World\Beings\Skill.cs" />
+    <Compile Include="World\Beings\AI\Stimulus.cs" />
+    <Compile Include="World\Beings\AbstractProfession.cs" />
+    <Compile Include="World\Beings\Stat.cs" />
+    <Compile Include="World\Beings\IStatBeing.cs" />
+    <Compile Include="World\Beings\IBackPackBeing.cs" />
+    <Compile Include="World\Beings\IEquipmentBeing.cs" />
+    <Compile Include="World\Beings\MonsterFacade.cs" />
+    <Compile Include="World\EntityCreator.cs" />
+    <Compile Include="World\Beings\Actions\AbstractAction.cs" />
+    <Compile Include="World\Beings\AI\AbstractAi.cs" />
+    <Compile Include="World\Beings\StatSet.cs" />
+    <Compile Include="World\Beings\Being.cs" />
+    <Compile Include="World\Beings\ITempsBeing.cs" />
+    <Compile Include="World\Beings\ISkillsBeing.cs" />
+    <Compile Include="World\Beings\IWeaponSkillsBeing.cs" />
+    <Compile Include="World\Beings\Monster.cs" />
+    <Compile Include="World\Beings\MonsterGenerator.cs" />
+    <Compile Include="World\Beings\Pc.cs" />
+    <Compile Include="World\Beings\SkillSet.cs" />
+    <Compile Include="World\Beings\TempSet.cs" />
+    <Compile Include="World\Beings\WeaponSkillSet.cs" />
+    <Compile Include="World\Creatable.cs" />
+    <Compile Include="World\Items\AbstractItemGenerator.cs" />
+    <Compile Include="World\Items\BackPack.cs" />
+    <Compile Include="World\Items\EquipableItem.cs" />
+    <Compile Include="World\Items\Equipment.cs" />
+    <Compile Include="World\Items\EquipmentSlot.cs" />
+    <Compile Include="World\Items\Item.cs" />
+    <Compile Include="World\Items\ItemFacade.cs" />
+    <Compile Include="World\Items\Stack.cs" />
+    <Compile Include="World\Usable.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\Configuration\readme.txt" />
+    <Content Include="Data\GameData\readme.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Data\Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

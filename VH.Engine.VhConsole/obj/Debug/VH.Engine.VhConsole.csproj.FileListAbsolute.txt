@@ -1,0 +1,10 @@
+C:\vampirehunt\VH.Engine.VhConsole\bin\Debug\VH.Engine.VhConsole.dll
+C:\vampirehunt\VH.Engine.VhConsole\bin\Debug\VH.Engine.VhConsole.pdb
+C:\vampirehunt\VH.Engine.VhConsole\bin\Debug\VH.Engine.dll
+C:\vampirehunt\VH.Engine.VhConsole\bin\Debug\VH.Engine.pdb
+C:\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.csprojAssemblyReference.cache
+C:\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.ConsoleForm.resources
+C:\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.csproj.GenerateResource.cache
+C:\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.csproj.CopyComplete
+C:\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.dll
+C:\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.pdb

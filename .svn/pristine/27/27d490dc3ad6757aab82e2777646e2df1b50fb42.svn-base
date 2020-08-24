@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{7E8AC9C4-E451-4B17-9D47-75C16EF6784A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>VH</RootNamespace>
+    <AssemblyName>VH2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Game\SplashScreen.cs" />
+    <Compile Include="Game\VhGameController.cs" />
+    <Compile Include="Game\World\Beings\Actions\CastDarknessAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\CauseBlindnessAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\CauseConfusionAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\CausePoisoningAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\ChopAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\ConsumeAlcoholAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\CauseIllnessAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\CastLightAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\ConsumeBirchDecoctionAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\ConsumeRueAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\ConsumeRueOilAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\ConsumeToadVenomAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\ConsumeWormwoodAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\DigAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\DropAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\EquipAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\ExamineItemAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\IncreaseStrengthAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\JumpAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\ManageEquipmentAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\ReadAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\SearchAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\StealAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\SuckLifeAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\SuckStrengthAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\DrinkAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\UseItemAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\VhAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\VhPickUpAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\ZapAction.cs" />
+    <Compile Include="Game\World\Beings\Ai\AnimalAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\BobokAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\CmukAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\GnomeAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\LeshyAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\MothAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\HumanAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\NymphAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\FlyingAnimalAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\HauntBehavior.cs" />
+    <Compile Include="Game\World\Beings\Ai\PcAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\SicknessAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\HostileAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\StrixAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\VampireAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\ViperAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\WillOWispAi.cs" />
+    <Compile Include="Game\World\Beings\Animal.cs" />
+    <Compile Include="Game\World\Beings\ArmorSlot.cs" />
+    <Compile Include="Game\World\Beings\Gnome.cs" />
+    <Compile Include="Game\World\Beings\HeadgearSlot.cs" />
+    <Compile Include="Game\World\Beings\Humanoid.cs" />
+    <Compile Include="Game\World\Beings\NeckwearSlot.cs" />
+    <Compile Include="Game\World\Beings\Professions\Custodian.cs" />
+    <Compile Include="Game\World\Beings\Professions\Gravedigger.cs" />
+    <Compile Include="Game\World\Beings\Professions\Quack.cs" />
+    <Compile Include="Game\World\Beings\RingSlot.cs" />
+    <Compile Include="Game\World\Beings\VhMonster.cs" />
+    <Compile Include="Game\World\Beings\VhPc.cs" />
+    <Compile Include="Game\World\Beings\VhSkill.cs" />
+    <Compile Include="Game\World\Beings\WeaponSlot.cs" />
+    <Compile Include="Game\World\Beings\WillOWisp.cs" />
+    <Compile Include="Game\World\Items\BodyWear\Armor.cs" />
+    <Compile Include="Game\World\Items\EquipableItem.cs" />
+    <Compile Include="Game\World\Items\MagicalItem.cs" />
+    <Compile Include="Game\World\Items\Necklaces\Necklace.cs" />
+    <Compile Include="Game\World\Items\NonEquipableItem.cs" />
+    <Compile Include="Game\World\Items\Potions\Potion.cs" />
+    <Compile Include="Game\World\Items\Scrolls\Scroll.cs" />
+    <Compile Include="Game\World\Items\UsableItem.cs" />
+    <Compile Include="Game\World\Items\VhItemGenerator.cs" />
+    <Compile Include="Game\World\Items\Weapons\Weapon.cs" />
+    <Compile Include="Levels\LevelPlan.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Game\World\Beings\Ai\Stimuli\" />
+    <Folder Include="Game\World\Items\Headgear\" />
+    <Folder Include="Game\World\Items\Missles\" />
+    <Folder Include="Game\World\Items\MissleWeapons\" />
+    <Folder Include="Game\World\Items\Rings\" />
+    <Folder Include="Game\World\Items\Signs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\VH.Engine.VhConsole\VH.Engine.VhConsole.csproj">
+      <Project>{031b0bcc-ad1d-4d29-993a-79f1fe19edc5}</Project>
+      <Name>VH.Engine.VhConsole</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\VH.Engine\VH.Engine.csproj">
+      <Project>{3A5CC000-FABC-4C7A-A0E9-08A2513B9A3C}</Project>
+      <Name>VH.Engine</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Data\cementary.txt" />
+    <Content Include="Data\Conf\keybindings.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Resources\itemIdeas.txt" />
+    <Content Include="Data\Resources\items.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\Resources\levels.xml">
+      <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Resources\messages.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\Resources\monster-generation.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\Resources\monsters.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\Resources\splash.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Data\Resources\translations.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Data\Resources\terrain.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

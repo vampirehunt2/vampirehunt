@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<levels 
+  root="Miasto" 
+  default-width="48" 
+  default-height="48" 
+  default-generator="dungeon"
+>
+  <generator name="dungeon" type="VH.Engine.Levels.DungeonMapGenerator" assembly="VH.Engine.dll"/>
+  <generator name="town" type="VH.Engine.Levels.TownMapGenerator" assembly="VH.Engine.dll"/>
+  <generator name="maze" type="VH.Engine.Levels.MazeMapGenerator" assembly="VH.Engine.dll"/>
+  <generator name="forest" type="VH.Engine.Levels.ForestMapGenerator" assembly="VH.Engine.dll" />
+  
+  <level name="Miasto" generator="town" danger="0"/>
+  <level name="Jaskinia" persistent="false" danger="5"/>
+  <level name="Las" generator="forest" persistent="true" danger="10"/>
+    
+  <level name="D01" danger="1" width="96" height="96"/>
+  <level name="D02" danger="2" width="96" height="96"/>
+  <level name="D03" danger="3" width="96" height="96"/>
+  <level name="D04" danger="4" width="96" height="96"/>
+  <level name="D05" danger="5" width="96" height="96"/>
+  
+  <level name="M01" generator="maze" danger="6"/>
+  <level name="M02" generator="maze" danger="7"/>
+  <level name="M03" generator="maze" danger="8"/>
+    
+  <level name="D09" danger="9"/>
+  <level name="D10" danger="10"/>
+  
+  <level name="B01" danger="7" bidirectional="false"/>
+  <level name="B02" danger="9" bidirectional="false"/>
+  <level name="B03" danger="11" bidirectional="false"/>
+  <level name="B04" danger="13" bidirectional="false" width="96" height="96"/>
+  <level name="B05" danger="15" bidirectional="false" width="96" height="96"/>
+
+  <connection parent="Miasto" child="Jaskinia"/>
+  <connection parent="Las" child="Jaskinia"/>
+  <connection parent="Miasto" child="D01"/>
+  <connection parent="D01" child="D02"/>
+  <connection parent="D02" child="D03"/>
+  <connection parent="D03" child="D04"/>
+  <connection parent="D04" child="D05"/>
+  
+  <connection parent="D05" child="M01"/>
+  <connection parent="M01" child="M02"/>
+  <connection parent="M02" child="M03"/>
+  <connection parent="M03" child="D09"/>
+  
+  <connection parent="D05" child="B01"/>
+  <connection parent="B01" child="B02"/>
+  <connection parent="B02" child="B03"/>
+  <connection parent="B03" child="B04"/>
+  <connection parent="B04" child="B05"/>
+  <connection parent="B05" child="D09"/>
+
+  <connection parent="D09" child="D10"/>
+  
+                    
+</levels>

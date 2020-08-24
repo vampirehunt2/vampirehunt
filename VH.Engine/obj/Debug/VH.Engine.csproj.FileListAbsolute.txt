@@ -1,0 +1,5 @@
+C:\vampirehunt\VH.Engine\bin\Debug\VH.Engine.dll
+C:\vampirehunt\VH.Engine\bin\Debug\VH.Engine.pdb
+C:\vampirehunt\VH.Engine\obj\Debug\VH.Engine.csprojAssemblyReference.cache
+C:\vampirehunt\VH.Engine\obj\Debug\VH.Engine.dll
+C:\vampirehunt\VH.Engine\obj\Debug\VH.Engine.pdb

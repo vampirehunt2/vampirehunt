@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<messages>
+  <message key="pick-up" person2="%Podnosisz %" person3="% podnosi %" />
+  <message key="drop" person2="%Upuszczasz %" person3="% upuszcza %" />
+  <message key="open-door" person2="%Otwierasz drzwi" person3="% otwiera drzwi" />
+  <message key="which-direction" person2="W którą stronę?" person3="" />
+  <message key="close-door" person2="%Zamykasz drzwi" person3="% zamyka drzwi" />
+  <message key="go-up" person2="%Wchodzisz po schodach" person3="% wchodzi po schodach" />
+  <message key="go-down" person2="%Schodzisz po schodach" person3="% schodzi po schodach" />
+  <message key="no-stairs" person2="Tutaj nie ma schodów" person3="" />
+  <message key="no-door" person2="Tutaj nie ma otwartych drzwi" person3="" />
+  <message key="stuck-door" person2="Drzwi są zacięte!" person3="% próbuje otworzyć drzwi, ale te są zablokowane" />
+  <message key="blocked-door" person2="Drzwi są zablokowane" person3=""/>
+  <message key="no-items" person2="Nie ma tu nic do podniesienia" person3="" />
+  <message key="no-suitable-items" person2="Nie masz odpowiedniego przedmiotu!" person3="" />
+  <message key="item-equipped" person2="%Wyposażasz się w %" person3="% wysposaża się w %" />
+  <message key="item-deequipped" person2="%Chowasz % do plecaka" person3="% chowa % do plecaka" />
+  <message key="attack" person2="%Uderzasz %" person3="% uderza %" />
+  <message key="miss" person2="%Chybisz próbując uderzyć %" person3="% chybi próbując uderzyć %" />
+  <message key="killed" person2="%Jesteś martwy!" person3="% umiera!"/>
+  <message key="backpack-full" person2="%Nie masz już miejsca w plecaku żeby schować %" person3="% próbuje wcisnąć % do plecaka, ale nie może znaleźć w nim miejsca" />
+  <message key="bash-door" person2="" person3="% wali w drzwi" />
+  <message key="spot" person2="%Zauważasz ukryte drzwi"/>
+  <message key="become-hostile" person2="" person3="% krzyczy w oburzeniu!" />
+  <message key="calmes-down" person2="" person3="% uspokaja się" />
+  <message key="swim" person2="%Płyniesz" person3="% płynie"/>
+  <message key="drown" person2="%Toniesz" person3="% tonie" />
+  <message key="become-afraid" person2="" person3="% nagle zaczyna panikować!" />
+  <message key="identify" person2="%Rozpoznajesz %" person3=""/>
+  <message key="no-identify" person2="%Nie rozpoznajesz co to" person3="" />
+  <message key="next-no-identify" person2="%Patrzysz głupkowato na %" person3="" />
+  <message key="drink" person2="%Przykładasz % do ust i wypijasz zawartość" person3="% pije" />
+  <message key="read" person2="%Czytasz %" person3="% czyta %" />
+  <message key="strength-increased" person2="%Nagle czujesz się silniejszy!" person3="% nagle wygląda na silniejszego" />
+  <message key="strength-not-increased" person2="%Czujesz dziwny smak" person3="% krzywi się" />
+  <message key="blinded" person2="%Nagle twoje oczy pieką i przestajesz widzieć!" person3="% jest oslepiony!"/>
+  <message key="not-blinded" person2="%Nagle twoje oczy pieką" person3="% mruga szybko oczyma" />
+  <message key="ill" person2="%Zaczynasz czuć się bardzo źle" person3="% przybiera dziwnie zielony kolor" />
+  <message key="not-ill" person2="%Czujesz łaskotanie w gardle. Kaszlesz" person3="% kaszle" />
+  <message key="poisoned" person2="%Czujesz jad w swoich żyłach" person3="% przybiera dziwnie fioletowy kolor" />
+  <message key="not-poisoned" person2="%Czujesz świerzbienie w brzuchu" person3="% krzywi się" />
+  <message key="cured" person2="%Czujesz się znacznie lepiej" person3="% odzyskuje zdrowy wygląd" />
+  <message key="unblinded" person2="%Odzyskujesz wzrok" person3="% odzyskuje wzrok" />
+  <message key="confused" person2="%Kręci ci się w głowie" person3="% chwieje się"/>
+  <message key="not-confused" person2="%Kręci ci się w głowie, zmuszasz się żeby stać prosto" person3="% chwieje się lekko" />
+  <message key="unconfused" person2="%Odzyskujesz równowagę" person3="% odzyskuje równowagę"/>
+  <message key="instant-recognition" person2="%Z miejsca rozpoznajesz %" person3="" />
+  <message key="stagger" person2="%Zataczasz się" person3="% się zatacza" />
+  <message key="no-stagger" person2="%Wysiłkiem woli zmuszasz się aby poruszać się prosto" person3="% wysiłkiem woli zmusza się aby poruszać się prosto" />
+  <message key="warmth" person2="%Przyjemne ciepło rozchodi się po twoim ciele" person3="% wydaje się lekko uśmiechać"/>
+  <message key="bitter" person2="%Płyn smakuje ohydnie gorzko" person3="% pluje z obrzydzeniem"/>
+  <message key="cure" person2="%Wtem czujesz się znacznie lepiej" person3="% wygląda się znacznie lepiej"/>
+  <message key="boom" person2="%BUM!" person3="% wpada na przeszkodę"/>
+  <message key="trip" person2="%Potykasz się o coś" person3="% potyka się o leżące przedmioty"/>
+  <message key="cant-examine" person2="%Z powodu ślepoty nie masz pojęcia co to jest" person3="% maca przedmiot"/>
+  <message key="wand-destroy" person2="%Patrzysz jak wędka znika" person3="% patrzy jak wędka znika" />
+  <message key="read-failed" person2="%Nie udaje ci się przeczytać %" person3="% gapi się głupkowato na %"/>
+  <message key="cast-light" person2="%Wokół robi się jaśniej" person3="Wokół % robi się jaśniej" />
+  <message key="spell-failed" person2="%Jesteś za kiepski w magji" person3="% patrzy dookoła zdziwiony"/>
+  <message key="cast-darkness" person2="%Nagle zapada ciemność" person3="% znika w ciemnościach"/>
+  <message key="refreshing" person2="%Przyjemnie świeży smak" person3=""/>
+  <message key="petrification-resistance" person2="%czujesz jak rozluźniają ci się mięśnie" person3="% dygocze z lekka"/>
+  <message key="steal" person2="%Wyciągasz przedmiot z plecaka wroga" person3="% okrada %" />
+  <message key="empty-backpack-steal" person2="%Natrafiasz pustkę macając plecak %" person3="% warczy gniewnie próbując okraść %" />
+  <message key="unsuccessful-steal" person2="%Próbujesz okraść % ale wywija się jak piskorz" person3="% wysuwa paluchy żeby okraść % ale to się nie udaje"/>
+  <message key="suck-strength" person2="%Wyssysasz siły życiowe z %" person3="% gryzie % i wyssysa siły życiowe"/>
+  <message key="suck-life" person2="%Wyssysasz esencję życiową z %" person3="% trafia % i wyssysa esencję życiową"/>
+  <message key="manowce" person2="%Próbujesz zwieść % na manowce" person3="% próbuje zwieść % na manowce"/>
+  <message key="wake-up" person2="%Budzisz się ze znu" person3="Budzi się %"/>
+  <message key="sing" person2="%Zaczynasz śpiewać" person3="% oszałamia % swoim śpiewem"/>
+  <message key="disappear" person2="%Przenosisz się przez eter w inne miejsce" person3="% znika!"/>
+  <message key="appear" person2="%Czujesz się nieco bardziej materialny" person3="Pojawia się %"/>
+  <message key="digging-succeeded" person2="Przekopujesz się przez ścianę" person3="% robi dziurę w ścianie"/>
+  <message key="digging-failed" person2="Ściana jest za twarda" person3="% skrobie ścianę"/>
+  <message key="choping-succeeded" person2="Ścinasz drzewo" person3="% ścina drzewo"/>
+  <message key="choping-failed" person2="Bezskutecznie próbujesz ściąć drzewo" person3="% bezskutecznie próbuje ściąć drzewo"/>
+
+</messages>
+
+

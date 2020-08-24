@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<monster-generation>
+  <level name="Miasto">
+    <generator mincount="1" maxcount="3" xpath="//monster[@id='uboze']"/>
+    <generator mincount="8" maxcount="10" xpath="//monster[@race='human']"/>
+    <generator mincount="2" maxcount="4" xpath="//monster[@race='animal' and @danger&lt;=1]"/>
+  </level>
+  <level name="[DB][0-9]+">
+    <generator mincount="25" maxcount="35" xpath="//monster[contains(@tags, 'terrestrial;') and @danger&lt;=$danger]"/>
+  </level>
+  <level name="M[0-9]+">
+    <generator mincount="35" maxcount="45" xpath="//monster[contains(@tags, 'terrestrial;') and @danger&lt;=$danger]"/>
+  </level>
+  <level name="Jaskinia">
+    <generator mincount="1" maxcount="3" xpath="//monster[@id='pike']"/>
+
+    <generator mincount="15" maxcount="25" xpath="//monster[contains(@tags, 'terrestrial;') and @danger&lt;=$danger]"/>
+  </level>
+  <level name="Las">
+    <generator mincount="2" maxcount="5" xpath="//monster[@id='leshy']"/>
+    <generator mincount="3" maxcount="6" xpath="//monster[@id='forest-nymph']"/>
+    <generator mincount="1" maxcount="3" xpath="//monster[@id='water-nymph']"/>
+    <generator mincount="1" maxcount="3" xpath="//monster[@id='utopiec']"/>
+    <generator mincount="1" maxcount="2" xpath="//monster[@id='willowisp']"/>
+    <generator mincount="3" maxcount="5" xpath="//monster[@race='animal']"/>
+  </level>
+</monster-generation>
