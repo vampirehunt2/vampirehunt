@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <monster-generation>
   <level name="Miasto">
+    <generator mincount="10" maxcount="10" xpath="//monster[@id='utopiec']"/>
     <generator mincount="1" maxcount="3" xpath="//monster[@id='uboze']"/>
     <generator mincount="8" maxcount="10" xpath="//monster[@race='human']"/>
     <generator mincount="2" maxcount="4" xpath="//monster[@race='animal' and @danger&lt;=1]"/>

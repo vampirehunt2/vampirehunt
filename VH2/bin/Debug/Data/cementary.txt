@@ -3,3 +3,4 @@ aaa, Kustosz Zabity przez boboka na poziomie D01
 aaa, Grabarz Zabity przez utonięcie na poziomie Miasto
 popo, Grabarz Zabity przez krasnoludka na poziomie D03
 aaa, Kustosz Zabity przez wieśniaka na poziomie Miasto
+aaa, Grabarz Zabity przez utopca na poziomie Miasto

@@ -71,6 +71,7 @@
     <Compile Include="Game\World\Beings\Actions\IncreaseStrengthAction.cs" />
     <Compile Include="Game\World\Beings\Actions\JumpAction.cs" />
     <Compile Include="Game\World\Beings\Actions\ManageEquipmentAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\PullInAction.cs" />
     <Compile Include="Game\World\Beings\Actions\ReadAction.cs" />
     <Compile Include="Game\World\Beings\Actions\SearchAction.cs" />
     <Compile Include="Game\World\Beings\Actions\StealAction.cs" />
@@ -95,6 +96,7 @@
     <Compile Include="Game\World\Beings\Ai\SicknessAi.cs" />
     <Compile Include="Game\World\Beings\Ai\HostileAi.cs" />
     <Compile Include="Game\World\Beings\Ai\StrixAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\UtopiecAi.cs" />
     <Compile Include="Game\World\Beings\Ai\VampireAi.cs" />
     <Compile Include="Game\World\Beings\Ai\ViperAi.cs" />
     <Compile Include="Game\World\Beings\Ai\WillOWispAi.cs" />

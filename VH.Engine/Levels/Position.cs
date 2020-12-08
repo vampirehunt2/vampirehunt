@@ -74,6 +74,11 @@ namespace VH.Engine.Levels {
             return X == otherPosition.X && Y == otherPosition.Y;
         }
 
+        public bool IsAdjacent(Position position) {
+            return Distance(position) == 1;
+        }
+
+
         public Position Clone() {
             return new Position(x, y);
         }
