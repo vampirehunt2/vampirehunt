@@ -40,6 +40,7 @@ namespace VH.Game.World.Beings.Actions {
                 Position pos = performer.Position;
                 performer.Position = UtopiecAi.GetOppositePosition(performer, Attackee);
                 Attackee.Position = pos;
+                notify("pull-in-water", Attackee);
             } else {
 
             }

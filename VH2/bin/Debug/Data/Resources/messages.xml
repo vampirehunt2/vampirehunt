@@ -74,6 +74,7 @@
   <message key="digging-failed" person2="Ściana jest za twarda" person3="% skrobie ścianę"/>
   <message key="choping-succeeded" person2="Ścinasz drzewo" person3="% ścina drzewo"/>
   <message key="choping-failed" person2="Bezskutecznie próbujesz ściąć drzewo" person3="% bezskutecznie próbuje ściąć drzewo"/>
+  <message key="pull-in-water" person2="%Wciągasz % pod wodę" person3="% wciąga cię pod wodę!"/>
 
 </messages>
 

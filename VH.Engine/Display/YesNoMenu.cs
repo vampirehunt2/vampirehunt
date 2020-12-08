@@ -21,6 +21,7 @@ namespace VH.Engine.Display {
 
         public override MenuResult ShowMenu() {
             window.ShowMessage(title + " " + yesChar + "/" + noChar);
+            window.Console.Refresh();
             char z;
             do {
                 z = window.Console.ReadKey();
