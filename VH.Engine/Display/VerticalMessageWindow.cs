@@ -66,6 +66,9 @@ namespace VH.Engine.Display {
                 row = 0;
                 base.GoTo(0, row++);
             }
+            StringBuilder sb = new StringBuilder(message);
+            while (sb.Length < Width - 2) sb.Append(" ");
+            message = sb.ToString();
             base.Write(message);
         }
 
