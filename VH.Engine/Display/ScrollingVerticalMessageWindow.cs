@@ -18,7 +18,7 @@ namespace VH.Engine.Display {
         }
 
         protected override void showMessage(string message) {
-            if (row > height / 2) scroll();
+            if (row >= height - 2) scroll();
             base.showMessage(message);
         }
 

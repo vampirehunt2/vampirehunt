@@ -8,3 +8,4 @@ C:\git\vampirehunt\VH.Engine\bin\Debug\VH.Engine.pdb
 C:\git\vampirehunt\VH.Engine\obj\Debug\VH.Engine.csproj.CoreCompileInputs.cache
 C:\git\vampirehunt\VH.Engine\obj\Debug\VH.Engine.dll
 C:\git\vampirehunt\VH.Engine\obj\Debug\VH.Engine.pdb
+C:\git\vampirehunt\VH.Engine\obj\Debug\VH.Engine.csprojAssemblyReference.cache
