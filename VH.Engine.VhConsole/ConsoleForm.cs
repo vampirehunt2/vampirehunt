@@ -261,7 +261,8 @@ namespace VH.Engine.VhConsole {
         }
 
         private void Form1_KeyPress(object sender, KeyPressEventArgs e) {
-            inputBuffer += e.KeyChar;
+            if (e.KeyChar == '\b') inputBuffer = inputBuffer.Substring(0, inputBuffer.Length - 1); // support for backspace
+            else inputBuffer += e.KeyChar;
             mri.Set();
             if (e.KeyChar == NEWLINE) {
                 mri2.Set();

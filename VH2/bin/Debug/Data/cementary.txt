@@ -24,3 +24,5 @@ aaa, Grabarz Zabity przez  na poziomie Miasto
 aaa, Grabarz Zabity przez  na poziomie Miasto
 aaa, Grabarz Zabity przez ubożę na poziomie Miasto
 aaa, Grabarz Zabity przez  na poziomie Miasto
+aaaa, Kustosz Zabity przez  na poziomie Miasto
+aaac, Grabarz Zabity przez  na poziomie Miasto
