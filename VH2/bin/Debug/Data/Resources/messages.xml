@@ -61,6 +61,7 @@
   <message key="refreshing" person2="%Przyjemnie świeży smak" person3=""/>
   <message key="petrification-resistance" person2="%czujesz jak rozluźniają ci się mięśnie" person3="% dygocze z lekka"/>
   <message key="steal" person2="%Wyciągasz przedmiot z plecaka wroga" person3="% okrada %" />
+  <message key="amnesia" person2="%Rzuasz klątwę amnezji" person3="% rzuca dziwne spojrzenie" />
   <message key="empty-backpack-steal" person2="%Natrafiasz pustkę macając plecak %" person3="% warczy gniewnie próbując okraść %" />
   <message key="unsuccessful-steal" person2="%Próbujesz okraść % ale wywija się jak piskorz" person3="% wysuwa paluchy żeby okraść % ale to się nie udaje"/>
   <message key="suck-strength" person2="%Wyssysasz siły życiowe z %" person3="% gryzie % i wyssysa siły życiowe"/>

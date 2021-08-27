@@ -52,6 +52,8 @@
     <Compile Include="Game\SplashScreen.cs" />
     <Compile Include="Game\VhGameController.cs" />
     <Compile Include="Game\World\Beings\Actions\CastDarknessAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\CauseAmnesiaAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\InflictAmnesiaAction.cs" />
     <Compile Include="Game\World\Beings\Actions\CauseBlindnessAction.cs" />
     <Compile Include="Game\World\Beings\Actions\CauseConfusionAction.cs" />
     <Compile Include="Game\World\Beings\Actions\CausePoisoningAction.cs" />
@@ -85,11 +87,12 @@
     <Compile Include="Game\World\Beings\Ai\AnimalAi.cs" />
     <Compile Include="Game\World\Beings\Ai\BobokAi.cs" />
     <Compile Include="Game\World\Beings\Ai\CmukAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\ForestNymphAi.cs" />
     <Compile Include="Game\World\Beings\Ai\GnomeAi.cs" />
     <Compile Include="Game\World\Beings\Ai\LeshyAi.cs" />
     <Compile Include="Game\World\Beings\Ai\MothAi.cs" />
     <Compile Include="Game\World\Beings\Ai\HumanAi.cs" />
-    <Compile Include="Game\World\Beings\Ai\NymphAi.cs" />
+    <Compile Include="Game\World\Beings\Ai\WaterNymphAi.cs" />
     <Compile Include="Game\World\Beings\Ai\FlyingAnimalAi.cs" />
     <Compile Include="Game\World\Beings\Ai\HauntBehavior.cs" />
     <Compile Include="Game\World\Beings\Ai\PcAi.cs" />

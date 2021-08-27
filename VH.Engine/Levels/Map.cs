@@ -133,6 +133,12 @@ namespace VH.Engine.Levels {
             return element; 
         }
 
+        public void ClearMem() {
+            for (int j = 0; j < height; ++j) {
+                for (int i = 0; i < width; ++i) mem[i, j] = (char)0;
+            }
+        }
+
         /// <summary>
         /// Indicates, whether light can pass a specified terrain feature.
         /// Useful for computing FoV

@@ -5,6 +5,7 @@
     <generator mincount="1" maxcount="3" xpath="//monster[@id='uboze']"/>
     <generator mincount="8" maxcount="10" xpath="//monster[@race='human']"/>
     <generator mincount="2" maxcount="4" xpath="//monster[@race='animal' and @danger&lt;=1]"/>
+    <generator mincount="2" maxcount="4" xpath="//monster[@id='forest-nymph']"/>
   </level>
   <level name="[DB][0-9]+">
     <generator mincount="25" maxcount="35" xpath="//monster[contains(@tags, 'terrestrial;') and @danger&lt;=$danger]"/>

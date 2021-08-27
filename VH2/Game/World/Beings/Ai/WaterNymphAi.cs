@@ -8,14 +8,14 @@ using VH.Engine.World.Beings.Actions;
 using VH.Game.World.Beings.Actions;
 
 namespace VH.Game.World.Beings.Ai {
-    public class NymphAi : HostileAi {
+    public class WaterNymphAi : HostileAi {
 
         private const float CONFUSE_RATE = 0.05f;
 
-        public NymphAi() {
+        public WaterNymphAi() {
         }
 
-        public NymphAi(Being being) : base(being) {
+        public WaterNymphAi(Being being) : base(being) {
         }
 
         public override AbstractAction SelectAction() {
