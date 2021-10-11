@@ -5,6 +5,7 @@
   <entry key="pick-up" value="Podnieś:"/>
   <entry key="backpack" value="Plecak:"/>
   <entry key="drop" value="Upuść"/>
+  <entry key="how-many" value="Ile?"/>
   
   <entry key="empty-slot" value="" />
   <entry key="equipment" value="Wyposażenie" />

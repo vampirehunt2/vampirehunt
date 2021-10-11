@@ -1,0 +1,361 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<vh2-saved-game>
+  <game type="VH.Game.VhGameController" assembly="VH2.exe" uuid="f4b83b2f-c6af-4ed6-a65c-4888aa0574e5" gametime-ticks="1000">
+    <viewport type="VH.Engine.Levels.ViewPort" assembly="VH.Engine.dll" uuid="9f8a87c9-83f8-4857-b526-6a4f6c064413" x="1" y="1" width="48" height="48" shade="True">
+      <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="24cefd7c-4319-4981-b1e9-b381bb4a3252" x="0" y="0" />
+    </viewport>
+    <pc type="VH.Game.World.Beings.VhPc" assembly="VH2.exe" uuid="e37051f0-1d9a-4a22-87b3-ca567b8edd89" id="" character="64" name="aaaa" accusativ="cię" plural="" danger="0" color="DarkBlue" tags="" walkable-terrain="., /~_&gt;&lt;" race="human" speed="1000" health="12">
+      <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="8ea6593a-e7bd-45ee-989a-90e93a3da516" x="34" y="19" />
+      <ai type="VH.Game.World.Beings.Ai.PcAi" assembly="VH2.exe" uuid="891d7837-ccd0-4817-852e-84a92d897f78" />
+      <equipment type="VH.Engine.World.Items.Equipment" assembly="VH.Engine.dll" uuid="7d6795c3-d585-46a2-bed6-c5b2313adb61">
+        <slots>
+          <slots-item type="VH.Game.World.Beings.HeadgearSlot" assembly="VH2.exe" uuid="d1fb11c1-d209-4875-96f6-cbfbbb6b566b">
+            <item type="VH.Game.World.Items.BodyWear.Armor" assembly="VH2.exe" uuid="7a287752-0ab9-45ab-b86b-23397ab8ba55" id="felt-beret" character="94" name="filcowy beret" accusativ="filcowy beret" plural="filcowe berety" danger="0" color="DarkBlue" tags="" defense="1">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="a6bd0a8c-eca9-4ec1-a7e5-74a1e1021761" x="0" y="0" />
+            </item>
+          </slots-item>
+          <slots-item type="VH.Game.World.Beings.NeckwearSlot" assembly="VH2.exe" uuid="6a76a405-658c-4260-a2c8-e44d3ef7506d" />
+          <slots-item type="VH.Game.World.Beings.WeaponSlot" assembly="VH2.exe" uuid="0e70245f-293b-4298-b493-dbe47af51687">
+            <item type="VH.Game.World.Items.Weapons.Weapon" assembly="VH2.exe" uuid="f69a62cf-e351-46e7-9b65-9d894df97355" id="spade" character="40" name="łopata" accusativ="łopatę" plural="łopaty" danger="6" color="Gray" tags="digging;" attack="5" defense="2">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="6b3b43af-9b5e-4042-8fe0-7dc6a65a3353" x="0" y="0" />
+            </item>
+          </slots-item>
+          <slots-item type="VH.Game.World.Beings.ArmorSlot" assembly="VH2.exe" uuid="b05cc373-763c-4941-bc83-50775d810db2">
+            <item type="VH.Game.World.Items.BodyWear.Armor" assembly="VH2.exe" uuid="675fcb68-cb2e-4671-8c8c-590dff4a5eb1" id="felt-jacket" character="91" name="kufajka" accusativ="kufajkę" plural="kufajki" danger="0" color="DarkBlue" tags="" defense="2">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="2682c6e2-7f77-4ed8-a124-cb98549f3439" x="0" y="0" />
+            </item>
+          </slots-item>
+          <slots-item type="VH.Game.World.Beings.RingSlot" assembly="VH2.exe" uuid="2fbf7495-83fa-43ce-bd1f-7b58071af412" name="" />
+          <slots-item type="VH.Game.World.Beings.RingSlot" assembly="VH2.exe" uuid="a925632a-86a6-47ee-913e-6c38b073910b" name="" />
+        </slots>
+      </equipment>
+      <skills type="VH.Engine.World.Beings.SkillSet" assembly="VH.Engine.dll" uuid="5c434a1a-93e0-4b2e-bc6e-315f63769b05" title="Umiejętności">
+        <skills>
+          <skills-item type="VH.Game.World.Beings.VhSkill" assembly="VH2.exe" uuid="c641251e-d7b4-49fc-bd9c-90fc287c1f23" id="swimming" name="Pływanie" skill-value="5" max-value="0" training-points="0" stat="Dx" learning-stat="In" />
+          <skills-item type="VH.Game.World.Beings.VhSkill" assembly="VH2.exe" uuid="ea365661-d96c-40c2-bf4a-d97b4a89a7af" id="digging" name="Kopanie" skill-value="28" max-value="0" training-points="0" stat="St" learning-stat="In" />
+          <skills-item type="VH.Game.World.Beings.VhSkill" assembly="VH2.exe" uuid="c3a00716-1bf1-41ce-be8a-cb186494b5c6" id="searching" name="Szukanie" skill-value="6" max-value="0" training-points="0" stat="Pe" learning-stat="In" />
+          <skills-item type="VH.Game.World.Beings.VhSkill" assembly="VH2.exe" uuid="7ed9b05c-da80-4b65-959b-40f7cfebcbd8" id="identification" name="Identyfikacja" skill-value="15" max-value="0" training-points="0" stat="In" learning-stat="In" />
+          <skills-item type="VH.Game.World.Beings.VhSkill" assembly="VH2.exe" uuid="2e14de83-80f9-4217-956f-2852f8620fe5" id="magick" name="Magija" skill-value="6" max-value="0" training-points="0" stat="In" learning-stat="In" />
+          <skills-item type="VH.Game.World.Beings.VhSkill" assembly="VH2.exe" uuid="9a98bdcc-daaa-4923-99d9-7243439729f0" id="reading" name="Czytanie" skill-value="11" max-value="0" training-points="0" stat="In" learning-stat="In" />
+        </skills>
+      </skills>
+      <stats type="VH.Engine.World.Beings.StatSet" assembly="VH.Engine.dll" uuid="2b6cc5cd-ccb3-4e33-8745-34ecfd975e90" title="Parametry">
+        <stats>
+          <stats-item type="VH.Engine.World.Beings.Stat" assembly="VH.Engine.dll" uuid="d8a3b64d-0949-46cb-a144-9dd309e90f20" id="St" name="Siła" attribute-value="8" />
+          <stats-item type="VH.Engine.World.Beings.Stat" assembly="VH.Engine.dll" uuid="5d744003-6c2d-4af5-aaf4-0954aa05479f" id="To" name="Wytrzymałość" attribute-value="8" />
+          <stats-item type="VH.Engine.World.Beings.Stat" assembly="VH.Engine.dll" uuid="5e2c038d-ce38-4d2b-97db-4b54d7dd61af" id="Dx" name="Zręczność" attribute-value="2" />
+          <stats-item type="VH.Engine.World.Beings.Stat" assembly="VH.Engine.dll" uuid="d47f3c0b-f198-4563-8a31-79b7b07bc3fc" id="In" name="Inteligencja" attribute-value="3" />
+          <stats-item type="VH.Engine.World.Beings.Stat" assembly="VH.Engine.dll" uuid="9c347503-6cce-4320-98db-cc691fa65b11" id="Pe" name="Spostrzegawczość" attribute-value="4" />
+        </stats>
+      </stats>
+      <backpack type="VH.Engine.World.Items.BackPack" assembly="VH.Engine.dll" uuid="ab586a82-b4b6-40c1-994a-9160d6dfac07" max-items="50" title="Plecak:">
+        <items>
+          <items-item type="VH.Engine.World.Items.ItemStack" assembly="VH.Engine.dll" uuid="fa5aef3b-d5ce-4333-a971-9e59f1aa9ec0" id="" character="0" name="butelka (x3)" accusativ="" plural="" danger="0" color="Gray" tags="">
+            <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="56c0b350-937d-43f6-9b4e-873c3bdf5f13" x="34" y="19" />
+          </items-item>
+        </items>
+      </backpack>
+      <profession type="VH.Game.World.Beings.Professions.Gravedigger" assembly="VH2.exe" uuid="7a5c2b53-6b56-467d-92d3-e2f7e612b09c" name="Grabarz" />
+    </pc>
+    <levels type="VH.Engine.Levels.LevelPersistencyHelper" assembly="VH.Engine.dll" uuid="407f4669-e6f4-4aac-9ca4-e185079078d8" starting-level="Miasto">
+      <level-structure>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="e9c5d774-ee8b-4445-8e34-f944338e1dea" persistent="True" bidirectional="True" name="Miasto" level-width="48" level-height="48" danger="0">
+          <map type="VH.Engine.Levels.Map" assembly="VH.Engine.dll" uuid="54e2509f-2e86-4eb2-af84-6250a8cbcd2b" height="48" width="48" map="4444#####################44#,,,,##,,,,,,,,,,,,,#44#,,,,+&gt;#,,,,,,,,,,,,,#4444#,,,,#+,,,,,,,,,,,,,#44444#,,,,##,,,,,,,,,,,,,#44444#,,,,################444######444444444444444#########+##444#,,,,,,,,,,#4444#,,,,,,,,,,##,,,,,,,,,,##,,,,,,,,,,##,,,,,,,,,,#~~~~~#,,,,,,,,,,#~~~~~~~#,,,,,,,,,,#~~~~~~~~~#####################+######~~~~~~~~~#,,,,,,,,,,,,,,#~~~~~~~~~#,,,,,,,,,,,,,,#~~~~~~~~~#,,,,,,,,,,,,,,#~~~~~~~~~#,,,,,,,,,,,,,,#~~~~~~~################~~~~~######+,,,,##,,,,#4444#,,,,#4444444#,,,,#4444######44&gt;4444444######+######4444~~~~~#,,,,,,,,,,,#4~~~~~~~#,,,,,,,,,,,#4444~~~~~~~~~#,,,,,,,,,,,#4~~~~~~~~~#,,,,,,,,,,,#44~~~~~~~~~#############44~~~~~~~~~44~~~~~~~~~4444~~~~~~~44444~~~~~4444" mem="                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            ###                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           " />
+          <map-generator type="VH.Engine.Levels.TownMapGenerator" assembly="VH.Engine.dll" uuid="2a9c59aa-f96a-4f6c-89ae-074bf6031191" />
+          <monsters>
+            <monsters-item type="VH.Game.World.Beings.VhMonster" assembly="VH2.exe" uuid="84a74530-988f-43ec-b95e-647130e806f7" id="uboze" character="117" name="ubożę" accusativ="ubożę" plural="ubożęta" danger="1" color="DarkYellow" tags="humanoid; demon; surface;" walkable-terrain="," race="humanoid" speed="1299" health="3" max-health="3" attack="3" defense="3" distance-attack="0" can-open-door="False" ticks-available="462">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="f3ac48e7-76a9-48dc-9c8f-2fbfea8268fd" x="14" y="31" />
+              <ai type="VH.Game.World.Beings.Ai.HostileAi" assembly="VH2.exe" uuid="00e380be-39d3-4269-bd10-8b360f0ded30" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="3000d9e2-95ff-45ff-a210-2dc96e9f0234" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+            <monsters-item type="VH.Game.World.Beings.VhMonster" assembly="VH2.exe" uuid="94412f97-d9f7-4edd-aeec-61254ff10af2" id="peasent" character="116" name="wieśniak" accusativ="wieśniaka" plural="wieśniacy" danger="0" color="DarkYellow" tags="human; surface;" walkable-terrain="., /~_&gt;&lt;" race="human" speed="899" health="3" max-health="3" attack="3" defense="3" distance-attack="0" can-open-door="False" ticks-available="889">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="b6d63275-c2d8-469f-825f-15824db1d8fa" x="26" y="30" />
+              <ai type="VH.Game.World.Beings.Ai.HumanAi" assembly="VH2.exe" uuid="ca29c4ab-1032-445f-8643-9e14a29a306e" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="d061a14f-3197-4672-a4db-a2fe4b285127" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+            <monsters-item type="VH.Game.World.Beings.VhMonster" assembly="VH2.exe" uuid="9d3fbc2d-8e65-4b70-a586-a6feef0b4f6f" id="peasent" character="116" name="wieśniak" accusativ="wieśniaka" plural="wieśniacy" danger="0" color="DarkYellow" tags="human; surface;" walkable-terrain="., /~_&gt;&lt;" race="human" speed="899" health="3" max-health="3" attack="3" defense="3" distance-attack="0" can-open-door="False" ticks-available="889">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="9bf13540-7cf4-4c94-8866-4259b3aafa7a" x="3" y="7" />
+              <ai type="VH.Game.World.Beings.Ai.HumanAi" assembly="VH2.exe" uuid="03df6788-53c2-432c-b333-8ffaf950ece8" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="58fa5500-12c8-4379-a61e-211c95d778b4" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+            <monsters-item type="VH.Game.World.Beings.VhMonster" assembly="VH2.exe" uuid="8178b873-aeea-4809-9370-897ddb718541" id="peasent" character="116" name="wieśniak" accusativ="wieśniaka" plural="wieśniacy" danger="0" color="DarkYellow" tags="human; surface;" walkable-terrain="., /~_&gt;&lt;" race="human" speed="899" health="3" max-health="3" attack="3" defense="3" distance-attack="0" can-open-door="False" ticks-available="889">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="5c18f21c-eb19-42ff-8e32-21e58a149c8e" x="17" y="31" />
+              <ai type="VH.Game.World.Beings.Ai.HumanAi" assembly="VH2.exe" uuid="a24af130-242a-4cd8-9984-d88fa22f54b0" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="11401953-a9bc-47f4-8dac-6160a0ba82ce" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+            <monsters-item type="VH.Game.World.Beings.VhMonster" assembly="VH2.exe" uuid="8831701a-c304-42b1-beea-35406b4106d9" id="peasent" character="116" name="wieśniak" accusativ="wieśniaka" plural="wieśniacy" danger="0" color="DarkYellow" tags="human; surface;" walkable-terrain="., /~_&gt;&lt;" race="human" speed="899" health="3" max-health="3" attack="3" defense="3" distance-attack="0" can-open-door="False" ticks-available="889">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="a7d93582-d35e-4984-b47d-5fc0fcb0e108" x="38" y="1" />
+              <ai type="VH.Game.World.Beings.Ai.HumanAi" assembly="VH2.exe" uuid="3d1c5546-89b3-4f82-8875-8fb98d0a1717" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="993e6cae-93a5-4a6c-b578-e0ccd19516dd" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+            <monsters-item type="VH.Game.World.Beings.VhMonster" assembly="VH2.exe" uuid="ab9d2a93-074c-417c-a3eb-ffff32cdfade" id="peasent" character="116" name="wieśniak" accusativ="wieśniaka" plural="wieśniacy" danger="0" color="DarkYellow" tags="human; surface;" walkable-terrain="., /~_&gt;&lt;" race="human" speed="899" health="3" max-health="3" attack="3" defense="3" distance-attack="0" can-open-door="False" ticks-available="889">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="cdea06db-04be-459b-ace6-0e0a72e92922" x="8" y="42" />
+              <ai type="VH.Game.World.Beings.Ai.HumanAi" assembly="VH2.exe" uuid="c4402829-1c57-4cde-9498-8384a4233f34" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="2250abf2-00ca-4ac3-9f66-a0ac48dfa504" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+            <monsters-item type="VH.Game.World.Beings.VhMonster" assembly="VH2.exe" uuid="f0dad8ec-3ee6-4cd8-a23a-78c1e047fc0d" id="peasent" character="116" name="wieśniak" accusativ="wieśniaka" plural="wieśniacy" danger="0" color="DarkYellow" tags="human; surface;" walkable-terrain="., /~_&gt;&lt;" race="human" speed="899" health="3" max-health="3" attack="3" defense="3" distance-attack="0" can-open-door="False" ticks-available="889">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="14589d8d-3100-4294-9c36-377a523d66e8" x="8" y="24" />
+              <ai type="VH.Game.World.Beings.Ai.HumanAi" assembly="VH2.exe" uuid="cdd8bbe9-4a47-495c-b101-448c3074cd0c" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="8475917f-77de-4d5a-9367-e71cd2e98d41" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+            <monsters-item type="VH.Game.World.Beings.VhMonster" assembly="VH2.exe" uuid="ce747479-e327-4aa5-aa3a-57a503451057" id="peasent" character="116" name="wieśniak" accusativ="wieśniaka" plural="wieśniacy" danger="0" color="DarkYellow" tags="human; surface;" walkable-terrain="., /~_&gt;&lt;" race="human" speed="899" health="3" max-health="3" attack="3" defense="3" distance-attack="0" can-open-door="False" ticks-available="889">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="32eb2d12-8cb3-4e67-9dc8-31861f429ea9" x="13" y="46" />
+              <ai type="VH.Game.World.Beings.Ai.HumanAi" assembly="VH2.exe" uuid="ac6504d1-4043-47ca-aac6-2371d350ef21" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="2bed12ea-01c7-4ecd-9537-79c9de0623a0" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+            <monsters-item type="VH.Game.World.Beings.VhMonster" assembly="VH2.exe" uuid="88a61319-2cbc-45b9-b059-d56f4d9bbdf0" id="peasent" character="116" name="wieśniak" accusativ="wieśniaka" plural="wieśniacy" danger="0" color="DarkYellow" tags="human; surface;" walkable-terrain="., /~_&gt;&lt;" race="human" speed="899" health="3" max-health="3" attack="3" defense="3" distance-attack="0" can-open-door="False" ticks-available="889">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="a3a6735b-d195-47f2-bf14-d73fbc6358cd" x="5" y="40" />
+              <ai type="VH.Game.World.Beings.Ai.HumanAi" assembly="VH2.exe" uuid="5da6cf5b-e543-4a81-87a8-638efe932c5f" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="bfca773c-09b8-4052-8b14-42eaa75f68cd" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+            <monsters-item type="VH.Game.World.Beings.VhMonster" assembly="VH2.exe" uuid="35cce502-0fd2-44e5-adf7-9f58b1653910" id="peasent" character="116" name="wieśniak" accusativ="wieśniaka" plural="wieśniacy" danger="0" color="DarkYellow" tags="human; surface;" walkable-terrain="., /~_&gt;&lt;" race="human" speed="899" health="3" max-health="3" attack="3" defense="3" distance-attack="0" can-open-door="False" ticks-available="889">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="56c70a3a-b084-419f-a8ae-698741bd3e6d" x="26" y="12" />
+              <ai type="VH.Game.World.Beings.Ai.HumanAi" assembly="VH2.exe" uuid="d94b08ea-39e3-4150-b863-2af987f4e55e" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="5295b6f2-5371-41fd-965b-c54f2d68726c" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+            <monsters-item type="VH.Game.World.Beings.VhMonster" assembly="VH2.exe" uuid="a2772214-85ac-4a63-87a9-88115a42d4e6" id="peasent" character="116" name="wieśniak" accusativ="wieśniaka" plural="wieśniacy" danger="0" color="DarkYellow" tags="human; surface;" walkable-terrain="., /~_&gt;&lt;" race="human" speed="899" health="3" max-health="3" attack="3" defense="3" distance-attack="0" can-open-door="False" ticks-available="889">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="bf6a82f4-16c4-4430-89e1-25b7a33b7597" x="7" y="36" />
+              <ai type="VH.Game.World.Beings.Ai.HumanAi" assembly="VH2.exe" uuid="d5395ca9-bd3d-429c-929c-c3c4b460c550" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="64edae14-0101-4794-8c52-1966d8cf548a" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+            <monsters-item type="VH.Game.World.Beings.Animal" assembly="VH2.exe" uuid="ff3b0d25-965e-4e5b-a352-296ca8e48b5e" id="pike" character="114" name="szczupak" accusativ="szczupaka" plural="szczupaki" danger="1" color="Green" tags="animal; aquatic;" walkable-terrain="~" race="animal" speed="2000" health="4" max-health="4" attack="3" defense="5" distance-attack="0" can-open-door="False" ticks-available="0">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="5bd049b8-a031-4627-a3a8-0ccf02ab5394" x="42" y="25" />
+              <ai type="VH.Game.World.Beings.Ai.FlyingAnimalAi" assembly="VH2.exe" uuid="be781656-db10-4fcd-a888-22686ba92262" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="803b2d2a-14cf-4c85-bead-3ebbe5ce9784" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+            <monsters-item type="VH.Game.World.Beings.VhMonster" assembly="VH2.exe" uuid="982c777a-ed5c-4ce5-83d5-f9b75fe2fb7a" id="snake" character="119" name="wąż" accusativ="węża" plural="węże" danger="0" color="DarkGreen" tags="animal; terrestrial;" walkable-terrain="., /~_&gt;&lt;" race="animal" speed="699" health="3" max-health="3" attack="2" defense="2" distance-attack="0" can-open-door="False" ticks-available="572">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="5fd4b3b4-3c46-48e4-b019-55315c64fabb" x="18" y="33" />
+              <ai type="VH.Game.World.Beings.Ai.AnimalAi" assembly="VH2.exe" uuid="0b8c25fb-3b31-4005-98a1-3c8c61641854" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="e159f5f3-5a0b-46ee-9b3b-c5aecb8a4915" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+            <monsters-item type="VH.Game.World.Beings.VhMonster" assembly="VH2.exe" uuid="35b5fb84-d055-4b2a-85b9-39a53602d269" id="forest-nymph" character="110" name="rusałka" accusativ="rusałkę" plural="rusałki" danger="1" color="Green" tags="elemental; humanoid; demon; woodland;" walkable-terrain="., /4" race="elemental" speed="1200" health="3" max-health="3" attack="2" defense="2" distance-attack="0" can-open-door="False" ticks-available="334">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="f66a6245-e657-453c-896a-93ab5ff0a84d" x="45" y="8" />
+              <ai type="VH.Game.World.Beings.Ai.ForestNymphAi" assembly="VH2.exe" uuid="587ed3bf-9686-4731-9acd-d879e2a6ef53" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="9a51540e-5fdc-4f9a-9da5-fecd80248eaa" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+            <monsters-item type="VH.Game.World.Beings.VhMonster" assembly="VH2.exe" uuid="0e1fcf2a-f08a-4e90-bb74-b42ff8f53910" id="forest-nymph" character="110" name="rusałka" accusativ="rusałkę" plural="rusałki" danger="1" color="Green" tags="elemental; humanoid; demon; woodland;" walkable-terrain="., /4" race="elemental" speed="1200" health="3" max-health="3" attack="2" defense="2" distance-attack="0" can-open-door="False" ticks-available="334">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="88371d96-60fc-41c2-b0ca-300a7172a748" x="7" y="46" />
+              <ai type="VH.Game.World.Beings.Ai.ForestNymphAi" assembly="VH2.exe" uuid="b22b2747-7172-4f8d-968b-3f36a1c924cd" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="9d3a05cb-aee5-41c2-b473-93758b3e1727" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+            <monsters-item type="VH.Game.World.Beings.VhMonster" assembly="VH2.exe" uuid="251ec0e3-bbd2-4f29-bc30-c82875ccd8c7" id="forest-nymph" character="110" name="rusałka" accusativ="rusałkę" plural="rusałki" danger="1" color="Green" tags="elemental; humanoid; demon; woodland;" walkable-terrain="., /4" race="elemental" speed="1200" health="3" max-health="3" attack="2" defense="2" distance-attack="0" can-open-door="False" ticks-available="334">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="4d6c49a8-e4b8-4456-ab14-b69945e7137b" x="5" y="3" />
+              <ai type="VH.Game.World.Beings.Ai.ForestNymphAi" assembly="VH2.exe" uuid="e262157a-ec1e-4ab9-8baa-c81761137f21" />
+              <temps type="VH.Engine.World.Beings.TempSet" assembly="VH.Engine.dll" uuid="a057c2f5-1d83-49ee-89e8-9b225d5e826b" illness-resistance="False" poisoned="False" ill="False" blind="False" confused="False" poison-resistance="False" />
+            </monsters-item>
+          </monsters>
+          <items>
+            <items-item type="VH.Game.World.Items.BodyWear.Armor" assembly="VH2.exe" uuid="7a7c7777-137f-4514-b0e8-5159aba5add2" id="clothes" character="91" name="ubranie" accusativ="ubranie" plural="ubrania" danger="0" color="DarkGreen" tags="" defense="1">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="63cd133e-43e9-43ec-a0d2-bbba391ac3ad" x="39" y="13" />
+            </items-item>
+            <items-item type="VH.Game.World.Items.Potions.Potion" assembly="VH2.exe" uuid="367e5ba2-4d49-472e-8649-af6599f04dac" id="booze" character="33" name="butelka" accusativ="butelkę" plural="butelki" danger="0" color="Blue" tags="" action-type-name="VH.Game.World.Beings.Actions.ConsumeAlcoholAction" action-assembly-name="VH2.exe" use-kind="drink" hidden-name="gorzałka" hidden-accusative="gorzałkę" hidden-plural="gorzałki" identify-value="0">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="fdf4749e-b692-4670-bba7-dae212c8465b" x="0" y="38" />
+            </items-item>
+            <items-item type="VH.Game.World.Items.BodyWear.Armor" assembly="VH2.exe" uuid="fb0c9371-e96f-43f4-aea3-75c1a353b7f6" id="sheepskin" character="91" name="kożuch" accusativ="kożuch" plural="kożuchy" danger="0" color="DarkGray" tags="" defense="3">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="9e331d5d-3d53-45b5-9f59-a1311b51b28d" x="38" y="0" />
+            </items-item>
+            <items-item type="VH.Game.World.Items.BodyWear.Armor" assembly="VH2.exe" uuid="7e8525ef-7e0e-4b61-8adf-a8cba26aeb6b" id="sheepskin" character="91" name="kożuch" accusativ="kożuch" plural="kożuchy" danger="0" color="DarkGray" tags="" defense="3">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="a23715a6-e2d2-473b-84d7-e3cb57671d29" x="28" y="30" />
+            </items-item>
+            <items-item type="VH.Game.World.Items.Potions.Potion" assembly="VH2.exe" uuid="53355751-c4c1-4501-bdfa-7f719705c601" id="methanol" character="33" name="butelka" accusativ="butelkę" plural="butelki" danger="0" color="Blue" tags="" action-type-name="VH.Game.World.Beings.Actions.CauseBlindnessAction" action-assembly-name="VH2.exe" use-kind="drink" hidden-name="metalak" hidden-accusative="metalak" hidden-plural="butelki metalaku" identify-value="0">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="d215bed7-9b0d-473a-a047-eff8ab4576a5" x="35" y="12" />
+            </items-item>
+            <items-item type="VH.Game.World.Items.BodyWear.Armor" assembly="VH2.exe" uuid="13954ada-e39d-4585-9351-4acb97a58ba1" id="hood" character="94" name="kaptur" accusativ="kaptur" plural="kaptury" danger="0" color="Gray" tags="" defense="2">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="ffea7360-416f-47a6-8079-680c057a8e08" x="17" y="24" />
+            </items-item>
+            <items-item type="VH.Game.World.Items.Weapons.Weapon" assembly="VH2.exe" uuid="ea6012a5-f128-42f8-a352-a20dc93eeea0" id="knife" character="40" name="nóż" accusativ="nóż" plural="noże" danger="0" color="Gray" tags="" attack="3" defense="0">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="2f3fee50-efe8-4b12-9cd9-a37e9e747a45" x="43" y="37" />
+            </items-item>
+            <items-item type="VH.Game.World.Items.Weapons.Weapon" assembly="VH2.exe" uuid="7e8b7c68-ccd3-4294-9add-71f2e17488e7" id="cane" character="40" name="laska" accusativ="laskę" plural="laski" danger="0" color="DarkYellow" tags="" attack="1" defense="1">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="0b8027f7-1896-4975-a252-be641a4271fa" x="36" y="30" />
+            </items-item>
+          </items>
+          <up-passages />
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="b8314261-ed7f-4f07-bf9c-6d9c7d154d15" target-level-name="Jaskinia">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="0d924588-5b25-4343-b124-5afa7c211493" x="2" y="34" />
+            </down-passages-item>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="c6ed65fd-c345-48ca-aec2-be547272556f" target-level-name="D01">
+              <position type="VH.Engine.Levels.Position" assembly="VH.Engine.dll" uuid="9e93515e-f695-4bb5-b5b5-f15b913140a3" x="15" y="4" />
+            </down-passages-item>
+          </down-passages>
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="d54565b4-abac-4438-bb53-a5f9edd635d4" persistent="False" bidirectional="True" name="Jaskinia" level-width="48" level-height="48" danger="5">
+          <map-generator type="VH.Engine.Levels.DungeonMapGenerator" assembly="VH.Engine.dll" uuid="8a1fc00a-a039-43e0-89ca-06377448e42a" />
+          <monsters />
+          <items />
+          <up-passages>
+            <up-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="dac3dcc1-897a-454d-ac76-6993c41d45b7" target-level-name="Miasto" />
+            <up-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="0ae4f93a-a1fc-42be-84b9-5ef2f0151a19" target-level-name="Las" />
+          </up-passages>
+          <down-passages />
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="33c0665f-9db8-4003-bb35-0cad68062d81" persistent="True" bidirectional="True" name="Las" level-width="48" level-height="48" danger="10">
+          <map-generator type="VH.Engine.Levels.ForestMapGenerator" assembly="VH.Engine.dll" uuid="9eb7df90-3b2b-489f-99d7-46a8b8883c4d" />
+          <monsters />
+          <items />
+          <up-passages />
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="6bb61f7b-e255-45c4-80c8-18a421ecad2a" target-level-name="Jaskinia" />
+          </down-passages>
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="b2a0c992-9454-4ea5-94c9-9a30847ccaca" persistent="True" bidirectional="True" name="D01" level-width="96" level-height="96" danger="1">
+          <map-generator type="VH.Engine.Levels.DungeonMapGenerator" assembly="VH.Engine.dll" uuid="feaf7895-45ba-4799-bd05-ffeadff0339b" />
+          <monsters />
+          <items />
+          <up-passages>
+            <up-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="f54533fb-f8cf-429c-b12d-f5444ee79488" target-level-name="Miasto" />
+          </up-passages>
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="9ad85fac-a061-41c8-8a94-c8f44198fe9c" target-level-name="D02" />
+          </down-passages>
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="86adf21b-5728-462e-a4d1-e99f493b47c4" persistent="True" bidirectional="True" name="D02" level-width="96" level-height="96" danger="2">
+          <map-generator type="VH.Engine.Levels.DungeonMapGenerator" assembly="VH.Engine.dll" uuid="11ecd35a-8e18-4006-ae73-9edd188aa0a6" />
+          <monsters />
+          <items />
+          <up-passages>
+            <up-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="565a248f-3ee7-4b7c-a3ab-a35e308c9c66" target-level-name="D01" />
+          </up-passages>
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="f315d0bc-8649-4e0c-8f91-dc3b38ef25af" target-level-name="D03" />
+          </down-passages>
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="cc012aeb-db5e-4e8c-97c4-f49ad4e11c3d" persistent="True" bidirectional="True" name="D03" level-width="96" level-height="96" danger="3">
+          <map-generator type="VH.Engine.Levels.DungeonMapGenerator" assembly="VH.Engine.dll" uuid="c16c27a4-0f74-4583-bb3d-d782773b46d5" />
+          <monsters />
+          <items />
+          <up-passages>
+            <up-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="f46c2fc9-4c25-4100-b757-4fafe3ce2074" target-level-name="D02" />
+          </up-passages>
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="a4e6aa76-337c-4886-8493-383f92adc544" target-level-name="D04" />
+          </down-passages>
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="bd6d9b28-816f-4a1e-8552-b8936c3e5feb" persistent="True" bidirectional="True" name="D04" level-width="96" level-height="96" danger="4">
+          <map-generator type="VH.Engine.Levels.DungeonMapGenerator" assembly="VH.Engine.dll" uuid="6d912e87-61fa-4f72-8f50-9bc3fc58a9bd" />
+          <monsters />
+          <items />
+          <up-passages>
+            <up-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="6eb0cd42-55fd-47cd-b840-9721c67ee40b" target-level-name="D03" />
+          </up-passages>
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="8bf6d1ff-ccdf-4ed2-8af1-b2c02a09f0fa" target-level-name="D05" />
+          </down-passages>
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="8ba8259c-e075-40d2-b094-6452b687dfb0" persistent="True" bidirectional="True" name="D05" level-width="96" level-height="96" danger="5">
+          <map-generator type="VH.Engine.Levels.DungeonMapGenerator" assembly="VH.Engine.dll" uuid="2a4e7b4d-3787-4553-a0b3-935703ffe727" />
+          <monsters />
+          <items />
+          <up-passages>
+            <up-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="ee33ab09-f814-45e3-866a-002444d50f6a" target-level-name="D04" />
+          </up-passages>
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="87fe21c4-e2e9-4d54-854c-de72dec0a6f1" target-level-name="M01" />
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="3c767f97-14ca-4eea-ae51-d08737f3db8b" target-level-name="B01" />
+          </down-passages>
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="abf6bb29-9381-490e-9c79-c02d96ccc467" persistent="True" bidirectional="True" name="M01" level-width="48" level-height="48" danger="6">
+          <map-generator type="VH.Engine.Levels.MazeMapGenerator" assembly="VH.Engine.dll" uuid="a88c2b13-b6ca-449a-8c02-6c442c124ac2" />
+          <monsters />
+          <items />
+          <up-passages>
+            <up-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="09fc5b78-cfa9-4322-9bf5-b8ecc75f7dd6" target-level-name="D05" />
+          </up-passages>
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="a7d9c250-188c-4772-8a5c-e3f02ca3a469" target-level-name="M02" />
+          </down-passages>
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="0e6dac04-b7e1-42db-8805-261adb16e7a1" persistent="True" bidirectional="True" name="M02" level-width="48" level-height="48" danger="7">
+          <map-generator type="VH.Engine.Levels.MazeMapGenerator" assembly="VH.Engine.dll" uuid="550c262e-795c-47f5-bc1b-d8f26bb2d498" />
+          <monsters />
+          <items />
+          <up-passages>
+            <up-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="5e6d6113-ddfc-4e4a-9d3f-ff6737dc0e2f" target-level-name="M01" />
+          </up-passages>
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="bd54d7bd-e928-4311-8b80-61cb5ebf9b66" target-level-name="M03" />
+          </down-passages>
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="c70dabad-e1c9-4b2e-a838-9154e52d1254" persistent="True" bidirectional="True" name="M03" level-width="48" level-height="48" danger="8">
+          <map-generator type="VH.Engine.Levels.MazeMapGenerator" assembly="VH.Engine.dll" uuid="5ba55b20-76ec-4cfd-85a7-5e902287a771" />
+          <monsters />
+          <items />
+          <up-passages>
+            <up-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="e0c1f743-5e04-40c6-82a8-cfa1ca1ca5bd" target-level-name="M02" />
+          </up-passages>
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="b6c65930-82d8-48db-9665-dd66a4bd9e2e" target-level-name="D09" />
+          </down-passages>
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="340bc6fb-ed6b-49bd-a735-1d13a23e8de9" persistent="True" bidirectional="True" name="D09" level-width="48" level-height="48" danger="9">
+          <map-generator type="VH.Engine.Levels.DungeonMapGenerator" assembly="VH.Engine.dll" uuid="112b82fc-a9db-4f8b-8f30-3d51f1354eb4" />
+          <monsters />
+          <items />
+          <up-passages>
+            <up-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="2b127ed8-937a-4f82-bbf4-1fb37f1a69d0" target-level-name="M03" />
+            <up-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="07fb5092-085f-4df5-8701-16bf3e9fc9c0" target-level-name="B05" />
+          </up-passages>
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="221058c7-58a5-414d-ada6-0a39464b55ec" target-level-name="D10" />
+          </down-passages>
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="87e70599-4ddc-4760-99e4-1cf2cee5cff4" persistent="True" bidirectional="False" name="B05" level-width="96" level-height="96" danger="15">
+          <map-generator type="VH.Engine.Levels.DungeonMapGenerator" assembly="VH.Engine.dll" uuid="7d581829-1999-4f8b-acf8-bdcc63a36305" />
+          <monsters />
+          <items />
+          <up-passages />
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="5f1f0950-59d2-4226-b645-1de5eed958d6" target-level-name="D09" />
+          </down-passages>
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="e50ecf77-089a-4cd1-9d62-a65a15a10d71" persistent="True" bidirectional="True" name="D10" level-width="48" level-height="48" danger="10">
+          <map-generator type="VH.Engine.Levels.DungeonMapGenerator" assembly="VH.Engine.dll" uuid="1bef015f-fdb7-4857-bb9b-1a16e8a01516" />
+          <monsters />
+          <items />
+          <up-passages>
+            <up-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="d3dfc921-7310-4c47-81b2-0767a84039b6" target-level-name="D09" />
+          </up-passages>
+          <down-passages />
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="d68bf9d4-293a-4bd0-bbca-613fc4507d01" persistent="True" bidirectional="False" name="B01" level-width="48" level-height="48" danger="7">
+          <map-generator type="VH.Engine.Levels.DungeonMapGenerator" assembly="VH.Engine.dll" uuid="0bd320c5-a0d5-488e-998f-a9586b1de2c7" />
+          <monsters />
+          <items />
+          <up-passages />
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="7a9a5a4d-1e82-414a-a2b5-32d70fd8dcfe" target-level-name="B02" />
+          </down-passages>
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="d780ae1c-262e-43d4-8720-4adaebbc5782" persistent="True" bidirectional="False" name="B02" level-width="48" level-height="48" danger="9">
+          <map-generator type="VH.Engine.Levels.DungeonMapGenerator" assembly="VH.Engine.dll" uuid="3b4dbfab-1910-4f28-90a9-56264ea035aa" />
+          <monsters />
+          <items />
+          <up-passages />
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="f3624c1e-a710-4241-88f8-00683f96ccbb" target-level-name="B03" />
+          </down-passages>
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="18caa48c-81f1-4da9-ad03-212d371dfe32" persistent="True" bidirectional="False" name="B03" level-width="48" level-height="48" danger="11">
+          <map-generator type="VH.Engine.Levels.DungeonMapGenerator" assembly="VH.Engine.dll" uuid="6d6b475a-b04f-41db-9954-2ea5d0b4410a" />
+          <monsters />
+          <items />
+          <up-passages />
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="db05041d-8277-4f4d-9a42-254f6d277645" target-level-name="B04" />
+          </down-passages>
+        </level-structure-item>
+        <level-structure-item type="VH.Engine.Levels.Level" assembly="VH.Engine.dll" uuid="27a569f7-76e1-4e33-9136-bd30accd2452" persistent="True" bidirectional="False" name="B04" level-width="96" level-height="96" danger="13">
+          <map-generator type="VH.Engine.Levels.DungeonMapGenerator" assembly="VH.Engine.dll" uuid="544d58d7-0929-4a05-815e-a2e3fdd472ab" />
+          <monsters />
+          <items />
+          <up-passages />
+          <down-passages>
+            <down-passages-item type="VH.Engine.Levels.Passage" assembly="VH.Engine.dll" uuid="807cfad9-a144-42aa-b51b-6cfa3f0854c2" target-level-name="B05" />
+          </down-passages>
+        </level-structure-item>
+      </level-structure>
+    </levels>
+    <field-of-vision type="VH.Engine.LineOfSight.RaycastingFieldOfVision" assembly="VH.Engine.dll" uuid="60233d79-b5e3-480a-a57f-67e5ff71561f" />
+  </game>
+</vh2-saved-game>

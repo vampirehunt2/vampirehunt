@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,18 +9,17 @@ using VH.Game.World.Items;
 
 namespace VH.Game.World.Beings.Actions {
 
-    public class DrinkAction: AbstractAction{
+    public class StackingDrinkAction: AbstractAction{
 
         private UsableItem item;
 
-        public DrinkAction(Being performer, UsableItem item)
+        public StackingDrinkAction(Being performer, UsableItem item)
             : base(performer) {
             this.item = item;
         }
 
         public override bool Perform() {
-            
-            ((IBackPackBeing)performer).BackPack.Remove(item);
+            ((IBackPackBeing)performer).BackPack.RemoveSingleItem(item);
             item.Position = performer.Position.Clone();
             notify(item.UseKind, item);
             item.Use(performer);

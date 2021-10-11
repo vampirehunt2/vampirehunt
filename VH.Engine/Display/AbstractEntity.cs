@@ -61,7 +61,7 @@ namespace VH.Engine.Display {
         /// <summary>
         /// Gets or sets the name of this AbstractEntity
         /// </summary>
-        public string Name {
+        public virtual string Name {
             get { return name; }
             set { name = value; }
         }
@@ -69,7 +69,7 @@ namespace VH.Engine.Display {
         /// <summary>
         /// Gets or sets an Accusativ form of the name of this AbstractEntity
         /// </summary>
-        public string Accusativ {
+        public virtual string Accusativ {
             get { return accusativ; }
             set { accusativ = value; }
         }
@@ -77,7 +77,7 @@ namespace VH.Engine.Display {
         /// <summary>
         /// Gets or sets the plural form of the name of this AbstractEntity
         /// </summary>
-        public string Plural {
+        public virtual string Plural {
             get { return plural; }
             set { plural = value; }
         }
@@ -93,7 +93,7 @@ namespace VH.Engine.Display {
         /// <summary>
         /// Gets or sets the character that represents this AbstractEntity on the display
         /// </summary>
-        public char Character {
+        public virtual char Character {
             get { return character; }
             set { character = value; }
         }
@@ -101,7 +101,7 @@ namespace VH.Engine.Display {
         /// <summary>
         /// Gets or sets the color in which this AbstractEntity is rendered on the display
         /// </summary>
-        public ConsoleColor Color {
+        public virtual ConsoleColor Color {
             get { return color; }
             set { color = value; }
         }
@@ -119,7 +119,7 @@ namespace VH.Engine.Display {
         /// <summary>
         /// The danger level of this entity
         /// </summary>
-        public int Danger {
+        public virtual int Danger {
             get { return danger; }
             set { danger = value; }
         }

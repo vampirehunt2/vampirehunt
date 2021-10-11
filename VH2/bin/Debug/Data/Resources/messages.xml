@@ -68,7 +68,7 @@
   <message key="suck-life" person2="%Wyssysasz esencję życiową z %" person3="% trafia % i wyssysa esencję życiową"/>
   <message key="manowce" person2="%Próbujesz zwieść % na manowce" person3="% próbuje zwieść % na manowce"/>
   <message key="wake-up" person2="%Budzisz się ze znu" person3="Budzi się %"/>
-  <message key="sing" person2="%Zaczynasz śpiewać" person3="% oszałamia % swoim śpiewem"/>
+  <message key="sing" person2="%Zaczynasz śpiewać" person3="% oszałamia % swoim śpiewem, nagle nie wiesz gdzie jesteś!"/>
   <message key="disappear" person2="%Przenosisz się przez eter w inne miejsce" person3="% znika!"/>
   <message key="appear" person2="%Czujesz się nieco bardziej materialny" person3="Pojawia się %"/>
   <message key="digging-succeeded" person2="Przekopujesz się przez ścianę" person3="% robi dziurę w ścianie"/>

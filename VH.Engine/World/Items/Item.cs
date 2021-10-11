@@ -1,7 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using VH.Engine.Display;
 using System.Xml;
 using VH.Engine.Persistency;
@@ -29,7 +26,7 @@ namespace VH.Engine.World.Items {
         }
 
         /// <summary>
-        /// The name that this Being is referred by.
+        /// The name that this Entity is referred by.
         /// </summary>
         public override string Identity {
             get { return Name; } 
@@ -41,6 +38,10 @@ namespace VH.Engine.World.Items {
 
         public override void Create(XmlElement prototype) {
             base.Create(prototype);
+        }
+
+        public override bool Equals(object obj) {
+            return Identity == ((Item)obj).Identity;
         }
 
         public void FromXml(XmlDocument doc, XmlElement element) {

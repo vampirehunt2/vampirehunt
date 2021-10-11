@@ -46,7 +46,7 @@ namespace VH.Game.World.Beings {
 
         WeaponSkillSet weaponSkills;
 
-        BackPack backpack = new BackPack(Translator.Instance["backpack"], MAX_ITEMS);
+        StackingBackPack backpack = new StackingBackPack(Translator.Instance["backpack"], MAX_ITEMS);
         Equipment equipment;
         StatSet stats;
         SkillSet skills;
@@ -103,7 +103,7 @@ namespace VH.Game.World.Beings {
             get { return skills; }
         }
 
-        public BackPack BackPack {
+        public StackingBackPack BackPack {
             get { return backpack; }
         }
 
@@ -184,7 +184,7 @@ namespace VH.Game.World.Beings {
                 vhSkill.LearningStat = Stats[vhSkill.LearningStatId];
             }
 
-            backpack = GetElement(BACKPACK) as BackPack;
+            backpack = GetElement(BACKPACK) as StackingBackPack;
             profession = GetElement(PROFESSION) as AbstractProfession;
             profession.Being = this;
         }

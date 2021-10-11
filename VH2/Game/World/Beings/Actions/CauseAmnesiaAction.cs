@@ -9,7 +9,7 @@ using VH.Engine.World.Beings;
 namespace VH.Game.World.Beings.Actions {
     public class CauseAmnesiaAction: Engine.World.Beings.Actions.AbstractAction {
 
-        private const float RESISTANCE = 0.5f;
+        //private const float RESISTANCE = 0.5f;
 
         public CauseAmnesiaAction() : base(null) { }
         public CauseAmnesiaAction(Being performer) : base(performer) { }
@@ -18,6 +18,7 @@ namespace VH.Game.World.Beings.Actions {
             Map map = VhGameController.Instance.Level.Map;
             for (int i = 0; i < map.Width; ++i) {
                 for (int j = 0; j < map.Height; ++j) {
+                    //commented out for test purposes, but turned out it's actually better this way
                     /*if (Rng.Random.NextFloat() > RESISTANCE)*/ map.Mem[i, j] = Map.UNKNOWN;
                 }
             }

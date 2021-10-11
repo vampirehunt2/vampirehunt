@@ -50,6 +50,7 @@
     <Compile Include="Display\ExtendedWindow.cs" />
     <Compile Include="Display\LetterMenu.cs" />
     <Compile Include="Display\MessageWindow.cs" />
+    <Compile Include="Display\QuantityMenu.cs" />
     <Compile Include="Display\ScrollingVerticalMessageWindow.cs" />
     <Compile Include="Display\SystemConsole.cs" />
     <Compile Include="Display\VerticalMessageWindow.cs" />
@@ -143,6 +144,7 @@
     <Compile Include="World\Items\EquipmentSlot.cs" />
     <Compile Include="World\Items\Item.cs" />
     <Compile Include="World\Items\ItemFacade.cs" />
+    <Compile Include="World\Items\ItemStack.cs" />
     <Compile Include="World\Items\Stack.cs" />
     <Compile Include="World\Usable.cs" />
   </ItemGroup>

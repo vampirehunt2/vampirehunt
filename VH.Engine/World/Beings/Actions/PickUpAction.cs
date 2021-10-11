@@ -11,30 +11,57 @@ namespace VH.Engine.World.Beings.Actions {
 
     public class PickUpAction: AbstractAction {
 
+        #region fields
+
         protected Item item;
+
+        #endregion
+
+        #region constructors
 
         public PickUpAction(Being performer): base(performer) { }
 
-        public override bool Perform() {
+        #endregion
+
+        #region public methods
+
+        public bool SelectItem() {
+            // get the Item object to be picked up
             object[] objects = GameController.Instance.Level.GetItemsAt(performer.Position).ToArray();
             if (objects.Length == 0) {
                 notify("no-items");
                 return false;
             }
             if (objects.Length == 1) item = (Item)objects[0];
-            else  item = (Item)selectTarget(objects);
+            else item = (Item)selectTarget(objects);
+            // various ways in which adding items to the backpack may fail
             if (item == null) return false;
             if (!item.Position.Equals(performer.Position)) return false;
-            if (!((IBackPackBeing)performer).BackPack.Full) {
-                ((IBackPackBeing)performer).BackPack.Add(item);
-                GameController.Instance.Level.Items.Remove(item);
-                notify("pick-up", item);
-                return true;
-            } else {
+            return true;
+        }
+
+        public bool PickUp() {
+            StackingBackPack backpack = ((IBackPackBeing)performer).BackPack;
+            if (backpack.Full) {
                 notify("backpack-full", item);
                 return false;
             }
+            //
+            backpack.Add(item);
+            GameController.Instance.Level.Items.Remove(item);
+            notify("pick-up", item);
+            return true;
         }
+
+        public override bool Perform() {
+            if (SelectItem()) return PickUp();
+            return false;
+        }
+
+        #endregion
+
+
+
 
     }
 }

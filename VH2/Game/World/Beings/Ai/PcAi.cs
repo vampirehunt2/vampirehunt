@@ -53,9 +53,9 @@ namespace VH.Game.World.Beings.Ai {
             else if (command == "south-west") action = new MoveAction(pc, Step.SOUTH_WEST);
             else if (command == "take-stairs") action = new TakeStairsAction(pc);
             else if (command == "close-door") action = new CloseDoorAction(pc);
-            else if (command == "pick-up") action = new VhPickUpAction(pc);
-            else if (command == "drop") action = new DropAction(pc);
-            else if (command == "use") action = new UseItemAction(pc);
+            else if (command == "pick-up") action = new VhStackingPickUpAction(pc);
+            else if (command == "drop") action = new StackingDropAction(pc);
+            else if (command == "use") action = new StackingUseItemAction(pc);
             else if (command == "manage-equipment") action = new ManageEquipmentAction(pc);
             //
             return action;
@@ -68,12 +68,12 @@ namespace VH.Game.World.Beings.Ai {
         }
 
         public override object SelectTarget(object[] objects, Engine.World.Beings.Actions.AbstractAction action) {
-            if (action is DropAction) return selectDropTarget(objects);
+            if (action is StackingDropAction) return selectDropTarget(objects);
             if (action is PickUpAction) return selectPickUpTarget(objects);
             if (action is CloseDoorAction) return selectCloseDoorTarget(objects);
             if (action is ManageEquipmentAction) return selectDeequipTarget(objects);
             if (action is EquipAction) return selectEquipTarget(objects);
-            if (action is UseItemAction) return selectUseTarget(objects);
+            if (action is StackingUseItemAction) return selectUseTarget(objects);
             return null;
         }
 
@@ -136,9 +136,12 @@ namespace VH.Game.World.Beings.Ai {
         }
 
         private object selectUseTarget(object[] objects) {
-            List<UsableItem> usableItems = new List<UsableItem>();
+            List<Item> usableItems = new List<Item>();
             foreach (Item item in objects) {
-                if (item is UsableItem) usableItems.Add(item as UsableItem);
+                if (item is UsableItem ||
+                   (item is ItemStack && ((ItemStack)item).Item is UsableItem)) {
+                    usableItems.Add(item);
+                }
             }
             return getMenuSelection("select-item", usableItems.ToArray());
         }

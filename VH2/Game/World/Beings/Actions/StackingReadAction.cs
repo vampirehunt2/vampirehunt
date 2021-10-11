@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,17 +8,17 @@ using VH.Engine.World.Beings.Actions;
 
 namespace VH.Game.World.Beings.Actions {
 
-    public class ReadAction: AbstractAction{
+    public class StackingReadAction: AbstractAction{
 
          private UsableItem item;
 
-         public ReadAction(Being performer, UsableItem item)
+         public StackingReadAction(Being performer, UsableItem item)
             : base(performer) {
             this.item = item;
         }
 
         public override bool Perform() {
-            ((IBackPackBeing)performer).BackPack.Remove(item);
+            ((IBackPackBeing)performer).BackPack.RemoveSingleItem(item);
             item.Position = performer.Position.Clone();
             if (((ISkillsBeing)performer).Skills["reading"].Roll()) {
                 notify(item.UseKind, item);

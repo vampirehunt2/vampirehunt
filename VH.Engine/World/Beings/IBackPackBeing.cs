@@ -8,7 +8,7 @@ namespace VH.Engine.World.Beings {
 
     public interface IBackPackBeing {
 
-        BackPack BackPack { get; }
+        StackingBackPack BackPack { get; }
 
     }
 }

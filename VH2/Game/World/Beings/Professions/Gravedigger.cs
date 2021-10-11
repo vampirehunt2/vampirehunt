@@ -37,7 +37,7 @@ namespace VH.Game.World.Beings.Professions {
             equipment.Slots[2].Item = facade.CreateItemById("spade");
             equipment.Slots[3].Item = facade.CreateItemById("felt-jacket");
 
-            BackPack backpack = (being as IBackPackBeing).BackPack;
+            StackingBackPack backpack = (being as IBackPackBeing).BackPack;
             backpack.Add(facade.CreateItemById("booze"));
             backpack.Add(facade.CreateItemById("booze"));
             backpack.Add(facade.CreateItemById("potion-of-amnesia"));
