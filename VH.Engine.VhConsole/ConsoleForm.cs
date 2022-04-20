@@ -208,6 +208,7 @@ namespace VH.Engine.VhConsole {
             if (i < 0) mri2.WaitOne();
             mri2.Reset();
             i = inputBuffer.IndexOf(NEWLINE);
+            if (i < 0) return "";
             string line = inputBuffer.Substring(0, i);
             inputBuffer = inputBuffer.Substring(i + 1);
             return line;

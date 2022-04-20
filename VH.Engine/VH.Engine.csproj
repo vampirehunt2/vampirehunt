@@ -139,6 +139,7 @@
     <Compile Include="World\Creatable.cs" />
     <Compile Include="World\Items\AbstractItemGenerator.cs" />
     <Compile Include="World\Items\BackPack.cs" />
+    <Compile Include="World\Items\StackingBackPack.cs" />
     <Compile Include="World\Items\EquipableItem.cs" />
     <Compile Include="World\Items\Equipment.cs" />
     <Compile Include="World\Items\EquipmentSlot.cs" />

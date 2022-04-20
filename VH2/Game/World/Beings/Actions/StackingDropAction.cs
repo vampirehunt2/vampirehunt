@@ -17,7 +17,10 @@ namespace VH.Game.World.Beings.Actions {
         public override bool Perform() {
             StackingBackPack backpack = ((IBackPackBeing)performer).BackPack;
             object[] objects = backpack.Items.ToArray();
-            if (objects.Length == 0) return false;
+            if (objects.Length == 0) {
+                notify("no-suitable-items");
+                return false;
+            }
             Item item = (Item)selectTarget(objects);
             if (item == null) return false;
             if (item is ItemStack) {
@@ -28,6 +31,11 @@ namespace VH.Game.World.Beings.Actions {
                 } else {
                     if (menu.Quantity <= 0) return false;
                     if (menu.Quantity > stack.Count) return false;
+                    if (menu.Quantity == stack.Count) {
+                        Item toDrop = stack;
+                        putDown(toDrop);
+                        backpack.Remove(stack);
+                    }
                     if (menu.Quantity == 1) {
                         if (stack.Count > 2) {
                             Item toDrop = stack.Item;

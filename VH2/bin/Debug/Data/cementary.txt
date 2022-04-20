@@ -30,3 +30,5 @@ aaa, Kustosz Zabity przez węża na poziomie Miasto
 zzz, Grabarz Zabity przez  na poziomie Miasto
 aaa, Grabarz Zabity przez  na poziomie Miasto
 aaa, Kustosz Zabity przez  na poziomie Miasto
+aaa, Grabarz Zabity przez niedźwiedzia na poziomie Jaskinia
+aaa, Grabarz Zabity przez niedźwiedzia na poziomie Jaskinia
