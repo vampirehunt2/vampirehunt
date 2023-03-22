@@ -32,6 +32,12 @@ namespace VH.Engine.World.Items {
             }
         }
 
+        public List<Item> Items { 
+            get { 
+                return items; 
+            } 
+        }
+
         public int Count {
             get {
                 return items.Count;

@@ -13,17 +13,30 @@ namespace VH.Engine.World.Beings.Actions {
     
     public class AttackAction: AbstractAction {
 
-        private Being attackee;
+        private Being attackee = null;
         private GameController controller = GameController.Instance;
         protected int damage;
+
+        #region constructors
 
         public AttackAction(Being performer, Being attackee) : base(performer) {
             this.attackee = attackee;
         }
 
+        public AttackAction(Being performer) : base(performer) { }
+
+        #endregion
+
+        #region properties
+
         public Being Attackee {
             get { return attackee; }
+            set { attackee = value; }   
         }
+
+        #endregion
+
+        #region public methods
 
         public override bool Perform() {
             int attack = Rng.Random.Next(performer.Attack);
@@ -42,6 +55,8 @@ namespace VH.Engine.World.Beings.Actions {
             }
             return true;
         }
+
+        #endregion
 
     }
 }

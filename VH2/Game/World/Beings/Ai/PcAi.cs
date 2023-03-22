@@ -57,6 +57,7 @@ namespace VH.Game.World.Beings.Ai {
             else if (command == "drop") action = new StackingDropAction(pc);
             else if (command == "use") action = new StackingUseItemAction(pc);
             else if (command == "manage-equipment") action = new ManageEquipmentAction(pc);
+            else if (command == "shoot") action = new ShootAction(pc, 10);
             //
             return action;
         }
@@ -70,7 +71,8 @@ namespace VH.Game.World.Beings.Ai {
         public override object SelectTarget(object[] objects, Engine.World.Beings.Actions.AbstractAction action) {
             if (action is StackingDropAction) return selectDropTarget(objects);
             if (action is PickUpAction) return selectPickUpTarget(objects);
-            if (action is CloseDoorAction) return selectCloseDoorTarget(objects);
+            if (action is CloseDoorAction) return selectDirection(objects);
+            if (action is ShootAction) return selectDirection(objects);
             if (action is ManageEquipmentAction) return selectDeequipTarget(objects);
             if (action is EquipAction) return selectEquipTarget(objects);
             if (action is StackingUseItemAction) return selectUseTarget(objects);
@@ -120,7 +122,7 @@ namespace VH.Game.World.Beings.Ai {
             }
         }
 
-        private object selectCloseDoorTarget(object[] objects) {
+        private object selectDirection(object[] objects) {
             GameController.Instance.MessageManager.ShowMessage("which-direction", Being);
             char key = GameController.Instance.Console.ReadKey();
             Step direction = ((VhGameController)GameController.Instance).Keybindings.GetStepForKey(key);

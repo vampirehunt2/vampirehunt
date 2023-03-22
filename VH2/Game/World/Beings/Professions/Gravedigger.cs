@@ -40,16 +40,19 @@ namespace VH.Game.World.Beings.Professions {
             StackingBackPack backpack = (being as IBackPackBeing).BackPack;
             backpack.Add(facade.CreateItemById("booze"));
             backpack.Add(facade.CreateItemById("booze"));
-            backpack.Add(facade.CreateItemById("potion-of-amnesia"));
 
             foreach (Item item in backpack.Items) {
                 if (item is MagicalItem) {
                     (item as MagicalItem).Identify();
                 }
+                if (item is ItemStack) {
+                    foreach (Item subitem in (item as ItemStack).Items) {
+                        (subitem as MagicalItem).Identify();
+                    }
+
+                }
             }
-
             being.Color = equipment.Slots[3].Item.Color;
-
         }
     }
 }

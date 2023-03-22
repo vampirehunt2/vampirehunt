@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <keybindings>
   <binding command="north"        key="8"  name="Idź na północ" />
-  <binding command="south"        key="k"  name="Idź na południe" />
-  <binding command="east"         key="o"  name="Idź na wschód" />
-  <binding command="west"         key="u"  name="Idź na zachód" />
+  <binding command="south"        key="2"  name="Idź na południe" />
+  <binding command="east"         key="6"  name="Idź na wschód" />
+  <binding command="west"         key="4"  name="Idź na zachód" />
   <binding command="north-east"   key="9"  name="Idź na północny-wschód"/>
   <binding command="north-west"   key="7"  name="Idź na północny-zachód"/>
-  <binding command="south-east"   key="l"  name="Idź na południowy-wschód"/>
-  <binding command="south-west"   key="j"  name="Idź na południowy-zachód"/>
-  <binding command="wait"         key="i"  name="Czekaj"/>
+  <binding command="south-east"   key="3"  name="Idź na południowy-wschód"/>
+  <binding command="south-west"   key="1"  name="Idź na południowy-zachód"/>
+  <binding command="wait"         key="5"  name="Czekaj"/>
   <binding command="backpack"     key="p"  name="Pokaż plecak"/>
   <binding command="pick-up"      key=","  name="Podnieś"/>
   <binding command="drop"         key="U"  name="Upuść"/>
@@ -18,9 +18,10 @@
   <binding command="show-stats"   key="P"  name="Pokaż parametry"/>
   <binding command="take-stairs"  key=">"  name="Użyj schodów" />
   <binding command="close-door"   key="z"  name="Zamknij drzwi"/>
+  <binding command="shoot"		  key="t"  name="Strzelaj"/>
   <binding command="show-help"    key="?"  name="Pomoc" />
   <binding command="message-log"  key="h"  name="Historia wiadomości" />
   <binding command="show-plan"    key="m"  name="Pokaż mapę"/>
   <binding command="save"         key="Z"  name="Zapisz grę" />
-  <binding command="quit"         key="Q"  name="Wyjdź z gry"/>
+  <binding command="quit"         key="Q"  name="Wyjdź z gry"/>	
 </keybindings>
