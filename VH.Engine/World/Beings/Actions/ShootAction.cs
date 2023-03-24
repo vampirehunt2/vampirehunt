@@ -13,6 +13,7 @@ namespace VH.Engine.World.Beings.Actions {
 
         int range;
         AttackAction attack = null;
+        protected Position pos;
 
         #endregion
 
@@ -35,7 +36,7 @@ namespace VH.Engine.World.Beings.Actions {
 
         #region public methods
         public override bool Perform() {
-            Position pos = performer.Position;
+            pos = performer.Position;
             Step step = (Step)performer.Ai.SelectTarget(null, this);
             bool hit = false;
             int currentRange = 0;
@@ -61,7 +62,7 @@ namespace VH.Engine.World.Beings.Actions {
 
         #region protected methods
 
-        protected void missleStep() { }
+        protected virtual void missleStep() { }
 
         #endregion
 

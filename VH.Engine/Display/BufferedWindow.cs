@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Xml;
+using VH.Engine.Levels;
 
 namespace VH.Engine.Display {
 
@@ -14,7 +15,7 @@ namespace VH.Engine.Display {
     /// buffering to fail and will result in glitches. 
     /// It's up to the programmer to avoid that. 
     /// </summary>
-    public class BufferedWindow: Window {
+    public class BufferedWindow : Window {
 
         #region fields
 
@@ -41,7 +42,7 @@ namespace VH.Engine.Display {
         /// <param name="width">The width of this BufferedWindow</param>
         /// <param name="height">The height of this BufferedWindow</param>
         /// <param name="console">The console, on which this BufferedWindow is writing</param>
-        public BufferedWindow(int x, int y, int width, int height, IConsole console) : 
+        public BufferedWindow(int x, int y, int width, int height, IConsole console) :
             base(x, y, width, height, console) {
             initBuffers();
         }
@@ -71,6 +72,9 @@ namespace VH.Engine.Display {
         /// </summary>
         /// <param name="c">The character to write</param>
         public override void Write(char c) {
+            if (cursorX < 0 || cursorY < 0 ||
+                cursorX > newBuffer.GetUpperBound(0) ||
+                cursorY > newBuffer.GetUpperBound(1)) return;
             newBuffer[cursorX, cursorY] = c;
             newColorBuffer[cursorX, cursorY] = console.ForegroundColor;
             newBackcolorBuffer[cursorX, cursorY] = console.BackgroundColor;
@@ -99,9 +103,9 @@ namespace VH.Engine.Display {
         public void Refresh() {
             for (int i = 0; i < Width; ++i) {
                 for (int j = 0; j < Height; ++j) {
-                    if (newBuffer[i, j] != buffer[i, j] 
-                        || newColorBuffer[i, j] != colorBuffer[i, j] 
-                        || newBackcolorBuffer[i, j] != backcolorBuffer[i, j] 
+                    if (newBuffer[i, j] != buffer[i, j]
+                        || newColorBuffer[i, j] != colorBuffer[i, j]
+                        || newBackcolorBuffer[i, j] != backcolorBuffer[i, j]
                     ) {
                         colorBuffer[i, j] = newColorBuffer[i, j];
                         backcolorBuffer[i, j] = newBackcolorBuffer[i, j];
@@ -114,6 +118,32 @@ namespace VH.Engine.Display {
                 }
             }
             if (console.IsDoubleBuffered) console.Refresh();
+        }
+
+        /// <summary>
+        /// Refreshes this BufferedWindow from the buffers.
+        /// </summary>
+        public void Refresh(int x, int y) {
+            if (x < 0 || y < 0 ||
+                x > newBuffer.GetUpperBound(0) ||
+                y > newBuffer.GetUpperBound(1)) return;
+            if (newBuffer[x, y] != buffer[x, y]
+                        || newColorBuffer[x, y] != colorBuffer[x, y]
+                        || newBackcolorBuffer[x, y] != backcolorBuffer[x, y]
+                    ) {
+                colorBuffer[x, y] = newColorBuffer[x, y];
+                backcolorBuffer[x, y] = newBackcolorBuffer[x, y];
+                buffer[x, y] = newBuffer[x, y];
+                //newBuffer[i, j] = ' ';
+                console.ForegroundColor = colorBuffer[x, y];
+                console.BackgroundColor = backcolorBuffer[x, y];
+                base.Write(buffer[x, y], x, y);
+            }
+            if (console.IsDoubleBuffered) console.Refresh();
+        }
+
+        public void Refresh(Position pos) {
+            Refresh(pos.X, pos.Y);
         }
 
         #endregion

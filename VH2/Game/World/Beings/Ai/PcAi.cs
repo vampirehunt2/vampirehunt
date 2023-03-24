@@ -57,7 +57,7 @@ namespace VH.Game.World.Beings.Ai {
             else if (command == "drop") action = new StackingDropAction(pc);
             else if (command == "use") action = new StackingUseItemAction(pc);
             else if (command == "manage-equipment") action = new ManageEquipmentAction(pc);
-            else if (command == "shoot") action = new ShootAction(pc, 10);
+            else if (command == "shoot") action = new VhShootAction(pc);
             //
             return action;
         }

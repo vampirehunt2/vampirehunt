@@ -90,6 +90,7 @@
     <Compile Include="Game\World\Beings\Actions\UseItemAction.cs" />
     <Compile Include="Game\World\Beings\Actions\VhAction.cs" />
     <Compile Include="Game\World\Beings\Actions\VhPickUpAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\VhShootAction.cs" />
     <Compile Include="Game\World\Beings\Actions\VhStackingPickUpAction.cs" />
     <Compile Include="Game\World\Beings\Actions\ZapAction.cs" />
     <Compile Include="Game\World\Beings\Ai\AnimalAi.cs" />
@@ -129,6 +130,8 @@
     <Compile Include="Game\World\Items\BodyWear\Armor.cs" />
     <Compile Include="Game\World\Items\EquipableItem.cs" />
     <Compile Include="Game\World\Items\MagicalItem.cs" />
+    <Compile Include="Game\World\Items\Missles\Missle.cs" />
+    <Compile Include="Game\World\Items\MissleWeapons\MissleWeapon.cs" />
     <Compile Include="Game\World\Items\Necklaces\Necklace.cs" />
     <Compile Include="Game\World\Items\NonEquipableItem.cs" />
     <Compile Include="Game\World\Items\Potions\Potion.cs" />
@@ -163,8 +166,6 @@
   <ItemGroup>
     <Folder Include="Game\World\Beings\Ai\Stimuli\" />
     <Folder Include="Game\World\Items\Headgear\" />
-    <Folder Include="Game\World\Items\Missles\" />
-    <Folder Include="Game\World\Items\MissleWeapons\" />
     <Folder Include="Game\World\Items\Rings\" />
     <Folder Include="Game\World\Items\Signs\" />
   </ItemGroup>

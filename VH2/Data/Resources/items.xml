@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <items vamgine-version="1" vh-version="2">
+  <item type-name="VH.Game.World.Items.Missles.Missle" assembly-name="VH2.exe" id="arrow" name="strzała" accusativ="strzałę" plural="strzały" character="/" color="DarkYellow" danger="0" />
   <item type-name="VH.Game.World.Items.Weapons.Weapon" assembly-name="VH2.exe" id="knuckles" name="kastet" accusativ="kastet" plural="kastety" character="(" color="Yellow" danger="0" attack="1" defense="0" />
   <item type-name="VH.Game.World.Items.Weapons.Weapon" assembly-name="VH2.exe" id="cane" name="laska" accusativ="laskę" plural="laski" character="(" color="DarkYellow" danger="0" attack="1" defense="1" />
   <item type-name="VH.Game.World.Items.Weapons.Weapon" assembly-name="VH2.exe" id="stick" name="kij" accusativ="kij" plural="kije" character="(" color="DarkYellow" danger="0" attack="2" defense="1" />

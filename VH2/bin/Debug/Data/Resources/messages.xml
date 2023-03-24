@@ -15,8 +15,8 @@
   <message key="no-suitable-items" person2="Nie masz odpowiedniego przedmiotu!" person3="" />
   <message key="item-equipped" person2="%Wyposażasz się w %" person3="% wysposaża się w %" />
   <message key="item-deequipped" person2="%Chowasz % do plecaka" person3="% chowa % do plecaka" />
-  <message key="attack" person2="%Uderzasz %" person3="% uderza %" />
-  <message key="miss" person2="%Chybisz próbując uderzyć %" person3="% chybi próbując uderzyć %" />
+  <message key="attack" person2="%Trafiasz %" person3="% trafia %" />
+  <message key="miss" person2="%Chybisz próbując trafić %" person3="% chybi próbując trafić %" />
   <message key="killed" person2="%Jesteś martwy!" person3="% umiera!"/>
   <message key="backpack-full" person2="%Nie masz już miejsca w plecaku żeby schować %" person3="% próbuje wcisnąć % do plecaka, ale nie może znaleźć w nim miejsca" />
   <message key="bash-door" person2="" person3="% wali w drzwi" />
@@ -76,7 +76,7 @@
   <message key="choping-succeeded" person2="Ścinasz drzewo" person3="% ścina drzewo"/>
   <message key="choping-failed" person2="Bezskutecznie próbujesz ściąć drzewo" person3="% bezskutecznie próbuje ściąć drzewo"/>
   <message key="pull-in-water" person2="%Wciągasz % pod wodę" person3="% wciąga cię pod wodę!"/>
-
+	<message key="no-missle-weapon" person2="Może spróbuj z jakimś łukiem" person3=""/>
 </messages>
 
 

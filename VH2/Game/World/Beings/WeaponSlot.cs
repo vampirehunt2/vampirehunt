@@ -10,8 +10,10 @@ namespace VH.Game.World.Beings {
 
     public class WeaponSlot: EquipmentSlot {
 
+        public static readonly string ID = "weapon-slot";
+
         public WeaponSlot() : base() {
-            id = "weapon-slot";
+            id = ID;
         }
 
         public override bool IsItemCompatible(Item item) {
