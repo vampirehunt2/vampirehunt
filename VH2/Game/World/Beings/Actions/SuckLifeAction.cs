@@ -7,7 +7,7 @@ using VH.Engine.World.Beings.Actions;
 
 namespace VH.Game.World.Beings.Actions {
 
-    public class SuckLifeAction: AttackAction {
+    public class SuckLifeAction: MeleeAttackAction {
 
         public SuckLifeAction(Being performer, Being attackee) : base(performer, attackee) { }
 

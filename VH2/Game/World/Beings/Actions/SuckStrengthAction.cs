@@ -7,7 +7,7 @@ using VH.Engine.World.Beings;
 using VH.Engine.World.Beings.Actions;
 
 namespace VH.Game.World.Beings.Actions {
-    public class SuckStrengthAction : AttackAction {
+    public class SuckStrengthAction : MeleeAttackAction {
 
         private const float SUCK_RATE = 0.2f;
 

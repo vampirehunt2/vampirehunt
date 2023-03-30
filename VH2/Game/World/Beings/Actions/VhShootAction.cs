@@ -9,8 +9,8 @@ using VH.Engine.Levels;
 using VH.Engine.World.Beings;
 using VH.Engine.World.Beings.Actions;
 using VH.Engine.World.Items;
+using VH.Engine.World.Items.Weapons;
 using VH.Game.World.Items.Missles;
-using VH.Game.World.Items.Weapons;
 
 namespace VH.Game.World.Beings.Actions {
     public class VhShootAction: ShootAction {
@@ -23,11 +23,11 @@ namespace VH.Game.World.Beings.Actions {
             EquipmentSlot slot = (performer as IEquipmentBeing).Equipment[WeaponSlot.ID];
             if (slot == null) return false;
             Item item = slot.Item;
-            /*if (item == null) {
+            if (item == null || !(item is MissleWeapon)) {
                 notify("no-missle-weapon");
                 return false;
-            }*/
-            AttackAction attackAction = new AttackAction(performer);
+            }
+            AbstractAttackAction attackAction = new MissleAttackAction(performer);
             Attack = attackAction;
             return base.Perform();
         }

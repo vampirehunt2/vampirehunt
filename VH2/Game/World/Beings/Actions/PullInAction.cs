@@ -10,7 +10,7 @@ using VH.Engine.World.Beings.Actions;
 using VH.Game.World.Beings.Ai;
 
 namespace VH.Game.World.Beings.Actions {
-    public class PullInAction : AttackAction {
+    public class PullInAction : MeleeAttackAction {
 
         #region constructors
 

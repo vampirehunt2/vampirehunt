@@ -201,8 +201,7 @@ namespace VH.Game {
         #region private methods
 
         private void initDisplay() {
-            console = //new SystemConsole();
-                new VhConsole();
+            console = new VhConsole();
             console.ForegroundColor = ConsoleColor.Gray;
             fieldOfVision = new RaycastingFieldOfVision();
             messageWindow = new ScrollingVerticalMessageWindow(50, 1, 28, 48, console);
@@ -239,7 +238,8 @@ namespace VH.Game {
                 new object[] { 
                     new Custodian(Pc),
                     new Quack(Pc),
-                    new Gravedigger(Pc)
+                    new Gravedigger(Pc),
+                    new Hunter(Pc)
                 },
                 MessageWindow,
                 false

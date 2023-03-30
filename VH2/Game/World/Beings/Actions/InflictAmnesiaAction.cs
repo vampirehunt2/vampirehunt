@@ -8,7 +8,7 @@ using VH.Engine.World.Beings;
 using VH.Engine.World.Beings.Actions;
 
 namespace VH.Game.World.Beings.Actions {
-    public class InflictAmnesiaAction: AttackAction {
+    public class InflictAmnesiaAction: MeleeAttackAction {
 
         #region constants
 

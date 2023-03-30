@@ -16,7 +16,7 @@ namespace VH.Game.World.Beings.Ai {
 
         public override AbstractAction SelectAction() {
             Engine.World.Beings.Actions.AbstractAction action = base.SelectAction();
-            if (action is AttackAction && Rng.Random.NextFloat() < CAUSE_BLINDNESS_RATE) {
+            if (action is MeleeAttackAction && Rng.Random.NextFloat() < CAUSE_BLINDNESS_RATE) {
                 action = new CauseBlindnessAction(getOponent());
             }
             return action;

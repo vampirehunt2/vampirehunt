@@ -2,23 +2,22 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using VH.Engine.World.Items;
-using VH.Engine.Translations;
-using VH.Game.World.Items.Weapons;
 using VH.Engine.World.Items.Weapons;
 
 namespace VH.Game.World.Beings {
+    public class MissleWeaponSlot: EquipmentSlot {
 
-    public class WeaponSlot: EquipmentSlot {
 
-        public static readonly string ID = "weapon-slot";
+        public static readonly string ID = "missle-weapon-slot";
 
-        public WeaponSlot() : base() {
+        public MissleWeaponSlot() : base() {
             id = ID;
         }
 
         public override bool IsItemCompatible(Item item) {
-            return item is Weapon;
+            return item is MissleWeapon;
         }
     }
 }

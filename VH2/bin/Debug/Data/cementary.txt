@@ -38,3 +38,9 @@ aaa, Grabarz Zabity przez  na poziomie Miasto
 aaa, Grabarz Zabity przez utonięcie na poziomie Miasto
 aaa, Grabarz Zabity przez  na poziomie Miasto
 aaa, Kustosz Zabity przez  na poziomie Miasto
+aa, Łowca Zabity przez  na poziomie Miasto
+aaa , Łowca Zabity przez  na poziomie Miasto
+ , Łowca Zabity przez  na poziomie Miasto
+aaa, Łowca Zabity przez  na poziomie Miasto
+aaa, Łowca Zabity przez  na poziomie Miasto
+aaa, Łowca Zabity przez  na poziomie Miasto

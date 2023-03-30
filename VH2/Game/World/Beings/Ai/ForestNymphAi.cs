@@ -20,8 +20,8 @@ namespace VH.Game.World.Beings.Ai {
 
         public override AbstractAction SelectAction() {
             Engine.World.Beings.Actions.AbstractAction action = base.SelectAction();
-            if (action is AttackAction && Rng.Random.NextFloat() < CAUSE_AMNESIA_RATE) {
-                Being attackee = (action as AttackAction).Attackee;
+            if (action is MeleeAttackAction && Rng.Random.NextFloat() < CAUSE_AMNESIA_RATE) {
+                Being attackee = (action as MeleeAttackAction).Attackee;
                 Notify("sing", attackee);
                 return new InflictAmnesiaAction(Being, attackee);
             }

@@ -3,12 +3,17 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using VH.Engine.World.Beings;
 using VH.Engine.World.Items;
-using VH.Game.World.Items.Weapons;
 
-namespace VH.Game.World.Items.MissleWeapons {
+namespace VH.Engine.World.Items.Weapons {
     public class MissleWeapon: Weapon {
-        public bool IsCompatibleMissle(Item item) {
+
+        public override string ToString() {
+            return Name + " +" + Attack;
+        }
+
+        public virtual bool IsCompatibleMissle(Item item) {
             return true;
         }
 

@@ -9,7 +9,7 @@ using VH.Engine.World.Items;
 
 namespace VH.Game.World.Beings.Actions {
 
-    public class StealAction : AttackAction {
+    public class StealAction : MeleeAttackAction {
 
         public StealAction(Being performer, Being attackee) : base(performer, attackee) {
         }

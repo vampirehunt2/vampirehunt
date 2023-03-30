@@ -27,8 +27,8 @@ namespace VH.Game.World.Beings.Ai {
 
         public override AbstractAction SelectAction() {
             AbstractAction action = base.SelectAction();
-            if (action is AttackAction && Rng.Random.NextFloat() < PULL_IN_RATE) {
-                Being attackee = (action as AttackAction).Attackee;
+            if (action is MeleeAttackAction && Rng.Random.NextFloat() < PULL_IN_RATE) {
+                Being attackee = (action as MeleeAttackAction).Attackee;
                 Map map = GameController.Instance.Map;
                 if (
                     map[Being.Position] == Terrain.Get("water").Character &&

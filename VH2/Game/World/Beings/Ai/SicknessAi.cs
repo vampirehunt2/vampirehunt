@@ -17,8 +17,8 @@ namespace VH.Game.World.Beings.Ai {
 
         public override AbstractAction SelectAction() {
             Engine.World.Beings.Actions.AbstractAction action = base.SelectAction();
-            if (action is AttackAction && Rng.Random.NextFloat() < ILLESS_ATACK_RATE) {
-                action = new CauseIllnessAction((action as AttackAction).Attackee);
+            if (action is MeleeAttackAction && Rng.Random.NextFloat() < ILLESS_ATACK_RATE) {
+                action = new CauseIllnessAction((action as MeleeAttackAction).Attackee);
             }
             return action;
         }

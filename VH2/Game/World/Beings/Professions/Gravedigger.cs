@@ -33,9 +33,9 @@ namespace VH.Game.World.Beings.Professions {
 
             Equipment equipment = (being as IEquipmentBeing).Equipment;
             ItemFacade facade = new ItemFacade();
-            equipment.Slots[0].Item = facade.CreateItemById("felt-beret");
-            equipment.Slots[2].Item = facade.CreateItemById("spade");
-            equipment.Slots[3].Item = facade.CreateItemById("felt-jacket");
+            equipment.Slots[VhPc.HEADGER_SLOT].Item = facade.CreateItemById("felt-beret");
+            equipment.Slots[VhPc.WEAPON_SLOT].Item = facade.CreateItemById("spade");
+            equipment.Slots[VhPc.WEAPON_SLOT].Item = facade.CreateItemById("felt-jacket");
 
             StackingBackPack backpack = (being as IBackPackBeing).BackPack;
             backpack.Add(facade.CreateItemById("booze"));

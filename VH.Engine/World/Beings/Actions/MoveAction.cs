@@ -63,7 +63,7 @@ namespace VH.Engine.World.Beings.Actions {
 
             // moving into a Being results in attacking it
             Being being = controller.GetBeingAt(newPosition);
-            if (being != null && being != performer) return new AttackAction(performer, being).Perform();
+            if (being != null && being != performer) return new MeleeAttackAction(performer, being).Perform();
 
             // check if performer is able to walk through whatever is at the level at new position, otherwise
             // interact with the terrain at the new position

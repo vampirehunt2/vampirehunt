@@ -1,63 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <translations>
-  <entry key="you" value="cię" />
-  
-  <entry key="pick-up" value="Podnieś:"/>
-  <entry key="backpack" value="Plecak:"/>
-  <entry key="drop" value="Upuść"/>
-  <entry key="how-many" value="Ile?"/>
-  
-  <entry key="empty-slot" value="" />
-  <entry key="equipment" value="Wyposażenie" />
-  <entry key="choose-slot" value="Wybierz element wyposażenia" />
-  <entry key="headgear-slot" value="Głowa" />
-  <entry key="neckwear-slot" value="Szyja" />
-  <entry key="weapon-slot" value="Ręce" />
-  <entry key="armor-slot" value="Ciało" />
-  <entry key="ring-slot" value="Pierścień" />
-  <entry key="select-item" value="Wybierz przedmiot" />
-  
-  <entry key="stats" value="Parametry"/>
-  <entry key="St" value="Siła" />
-  <entry key="To" value="Wytrzymałość"/>
-  <entry key="Dx" value="Zręczność"/>
-  <entry key="In" value="Inteligencja"/>
-  <entry key="Pe" value="Spostrzegawczość"/>
-  
-  <entry key="skills" value="Umiejętności"/>
-  <entry key="skill-upgrade" value=" poprawia się, i wynosi: "/>
-  <entry key="swimming" value="Pływanie" />
-  <entry key="digging" value="Kopanie" />
-  <entry key="searching" value="Szukanie" />
-  <entry key="identification" value="Identyfikacja" />
-  <entry key="magick" value="Magija" />
-  <entry key="reading" value="Czytanie" />
-  
-  <entry key="combat-stats" value="Walka"/>
-  <entry key="attack" value="Atak"/>
-  <entry key="defense" value="Obrona"/>
-  <entry key="health" value="Zdrowie" />
-  
-  <entry key="gravedigger" value="Grabarz" />
-  <entry key="quack" value="Znachor" />
-  <entry key="custodian" value="Kustosz" />
+	<entry key="you" value="cię" />
 
-  <entry key="kill-reason" value="Zabity przez " />
-  <entry key="kill-place" value=" na poziomie "/>
-  <entry key="drowning" value="utonięcie" />
+	<entry key="pick-up" value="Podnieś:"/>
+	<entry key="backpack" value="Plecak:"/>
+	<entry key="drop" value="Upuść"/>
+	<entry key="how-many" value="Ile?"/>
 
-  <entry key="bottle" value="butelka" />
-  <entry key="bottle-accusativ" value="butelkę" />
-  <entry key="bottle-plural" value="butelki" />
+	<entry key="empty-slot" value="" />
+	<entry key="equipment" value="Wyposażenie" />
+	<entry key="choose-slot" value="Wybierz element wyposażenia" />
+	<entry key="headgear-slot" value="Głowa" />
+	<entry key="neckwear-slot" value="Szyja" />
+	<entry key="weapon-slot" value="Ręce" />
+	<entry key="armor-slot" value="Ciało" />
+	<entry key="missle-weapon-slot" value="Broń miotana" />
+	<entry key="missle-slot" value="Amunicja" />
+	<entry key="ring-slot" value="Pierścień" />
+	<entry key="select-item" value="Wybierz przedmiot" />
 
-  <entry key="scroll" value="zaklęcie" />
-  <entry key="scroll-accusativ" value="zaklęcie" />
-  <entry key="scroll-plural" value="zaklęcia" />
-  
-  <entry key="quit?" value="Zamknąć grę?" />
-  <entry key="name-prompt" value="Jak masz na imię? " />
-  <entry key="choose-profession" value="Wybierz zawód" />
-  <entry key="welcome" value="Witaj, " />
-  <entry key="version" value="wersja: "/>
-  <entry key="end-game" value="Naciśnij [ENTER] by wyjść z gry" />
+	<entry key="stats" value="Parametry"/>
+	<entry key="St" value="Siła" />
+	<entry key="To" value="Wytrzymałość"/>
+	<entry key="Dx" value="Zręczność"/>
+	<entry key="In" value="Inteligencja"/>
+	<entry key="Pe" value="Spostrzegawczość"/>
+
+	<entry key="skills" value="Umiejętności"/>
+	<entry key="skill-upgrade" value=" poprawia się, i wynosi: "/>
+	<entry key="swimming" value="Pływanie" />
+	<entry key="digging" value="Kopanie" />
+	<entry key="searching" value="Szukanie" />
+	<entry key="identification" value="Identyfikacja" />
+	<entry key="magick" value="Magija" />
+	<entry key="reading" value="Czytanie" />
+	<entry key="missle-weapons" value="Broń miotana" />
+
+	<entry key="combat-stats" value="Walka"/>
+	<entry key="attack" value="Atak"/>
+	<entry key="defense" value="Obrona"/>
+	<entry key="health" value="Zdrowie" />
+
+	<entry key="gravedigger" value="Grabarz" />
+	<entry key="quack" value="Znachor" />
+	<entry key="custodian" value="Kustosz" />
+	<entry key="hunter" value="Łowca" />
+
+	<entry key="kill-reason" value="Zabity przez " />
+	<entry key="kill-place" value=" na poziomie "/>
+	<entry key="drowning" value="utonięcie" />
+
+	<entry key="bottle" value="butelka" />
+	<entry key="bottle-accusativ" value="butelkę" />
+	<entry key="bottle-plural" value="butelki" />
+
+	<entry key="scroll" value="zaklęcie" />
+	<entry key="scroll-accusativ" value="zaklęcie" />
+	<entry key="scroll-plural" value="zaklęcia" />
+
+	<entry key="quit?" value="Zamknąć grę?" />
+	<entry key="name-prompt" value="Jak masz na imię? " />
+	<entry key="choose-profession" value="Wybierz zawód" />
+	<entry key="welcome" value="Witaj, " />
+	<entry key="version" value="wersja: "/>
+	<entry key="end-game" value="Naciśnij [ENTER] by wyjść z gry" />
 </translations>

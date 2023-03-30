@@ -13,8 +13,8 @@ namespace VH.Game.World.Beings.Ai {
 
         public override AbstractAction SelectAction() {
             Engine.World.Beings.Actions.AbstractAction action = base.SelectAction();
-            if (action is AttackAction) {
-                action = new SuckStrengthAction(Being, (action as AttackAction).Attackee);
+            if (action is MeleeAttackAction) {
+                action = new SuckStrengthAction(Being, (action as MeleeAttackAction).Attackee);
             }
             return action;
         }

@@ -102,8 +102,11 @@
     <Compile Include="Tools\AssemblyCache.cs" />
     <Compile Include="Tools\NumberFormatter.cs" />
     <Compile Include="Translations\Translator.cs" />
+    <Compile Include="World\Beings\Actions\AbstractAttackAction.cs" />
     <Compile Include="World\Beings\Actions\AttackAction.cs" />
+    <Compile Include="World\Beings\Actions\MeleeAttackAction.cs" />
     <Compile Include="World\Beings\Actions\CloseDoorAction.cs" />
+    <Compile Include="World\Beings\Actions\MissleAttackAction.cs" />
     <Compile Include="World\Beings\Actions\MoveAction.cs" />
     <Compile Include="World\Beings\Actions\OpenDoorAction.cs" />
     <Compile Include="World\Beings\Actions\PickUpAction.cs" />
@@ -143,6 +146,8 @@
     <Compile Include="World\Creatable.cs" />
     <Compile Include="World\Items\AbstractItemGenerator.cs" />
     <Compile Include="World\Items\BackPack.cs" />
+    <Compile Include="World\Items\MeleeWeapon.cs" />
+    <Compile Include="World\Items\MissleWeapon.cs" />
     <Compile Include="World\Items\StackingBackPack.cs" />
     <Compile Include="World\Items\EquipableItem.cs" />
     <Compile Include="World\Items\Equipment.cs" />
@@ -151,6 +156,7 @@
     <Compile Include="World\Items\ItemFacade.cs" />
     <Compile Include="World\Items\ItemStack.cs" />
     <Compile Include="World\Items\Stack.cs" />
+    <Compile Include="World\Items\Weapon.cs" />
     <Compile Include="World\Usable.cs" />
   </ItemGroup>
   <ItemGroup>

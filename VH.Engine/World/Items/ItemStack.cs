@@ -1,11 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Xml;
+using System.Xml.Linq;
+using VH.Engine.Levels;
 
 namespace VH.Engine.World.Items {
 
-    public class ItemStack: Item {
+    public class ItemStack : Item {
+
+        #region constants
+
+        private const string ITEM = "item";
+
+        #endregion
 
         #region fields
 
@@ -21,6 +31,12 @@ namespace VH.Engine.World.Items {
             items.Add(item);
         }
 
+        public ItemStack(Item item, int count) {
+            for (int i = 0; i < count; i++) {
+                items.Add(item.Clone());
+            }
+        }
+
         #endregion
 
         #region properties
@@ -32,10 +48,10 @@ namespace VH.Engine.World.Items {
             }
         }
 
-        public List<Item> Items { 
-            get { 
-                return items; 
-            } 
+        public List<Item> Items {
+            get {
+                return items;
+            }
         }
 
         public int Count {
@@ -105,7 +121,7 @@ namespace VH.Engine.World.Items {
         }
 
         public void Add(Item item) {
-            if (!item.Equals(Item)) throw new ArgumentException("Not possible to add " + item.ToString() + " to this stack");
+            if (Item != null && !item.Equals(Item)) throw new ArgumentException("Not possible to add " + item.ToString() + " to this stack");
             items.Add(item);
         }
 
@@ -130,11 +146,21 @@ namespace VH.Engine.World.Items {
             return Item.Plural + countString;
         }
 
-        #endregion
+        public override void Create(XmlElement prototype) {
+            base.Create(prototype);
+        }
 
-        #region static methods
+        public override XmlElement ToXml(string name, XmlDocument doc) {
+            XmlElement element = base.ToXml(name, doc);
+            for (int i = 0; i < Items.Count; ++i) AddElement(ITEM, Items[i]);
+            return element;
+        }
 
-        
+        public override void FromXml(XmlElement element) {
+            base.FromXml(element);
+            List<Item> items = GetElements<Item>(ITEM);
+            for (int i = 0; i < items.Count; ++i) this.Items.Add(items[i]);
+        }
 
         #endregion
 

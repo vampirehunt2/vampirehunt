@@ -16,7 +16,7 @@ namespace VH.Game.World.Beings.Ai {
 
         public override AbstractAction SelectAction() {
             Engine.World.Beings.Actions.AbstractAction action = base.SelectAction();
-            if (action is AttackAction && Rng.Random.NextFloat() < CAST_DARKNESS_RATE) {
+            if (action is MeleeAttackAction && Rng.Random.NextFloat() < CAST_DARKNESS_RATE) {
                 action = new CastDarknessAction(Being);
             }
             return action;

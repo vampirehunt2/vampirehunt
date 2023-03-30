@@ -12,7 +12,7 @@ namespace VH.Engine.World.Beings.Actions {
         #region fields
 
         int range;
-        AttackAction attack = null;
+        AbstractAttackAction attack = null;
         protected Position pos;
 
         #endregion
@@ -27,7 +27,7 @@ namespace VH.Engine.World.Beings.Actions {
 
         #region properties
 
-        public AttackAction Attack { 
+        public AbstractAttackAction Attack { 
             get { return attack; } 
             set { attack = value; }
         }   
@@ -48,7 +48,7 @@ namespace VH.Engine.World.Beings.Actions {
                 if (attackee != null) {
                     hit = true;
                     if (attack == null) {
-                        attack = new AttackAction(performer, attackee);
+                        attack = new MeleeAttackAction(performer, attackee);
                     } else {
                         attack.Attackee = attackee;
                     }

@@ -35,8 +35,8 @@ namespace VH.Game.World.Beings.Ai {
 
             if (Rng.Random.NextFloat() < JUMP_RATE) return new JumpAction(Being);
 
-            if (action is AttackAction) {
-                AttackAction attackAction = action as AttackAction;
+            if (action is MeleeAttackAction) {
+                MeleeAttackAction attackAction = action as MeleeAttackAction;
                 Being attackee = attackAction.Attackee;
                 if (Rng.Random.NextFloat() < STEAL_RATE && attackee is IBackPackBeing) {
                     return new StealAction(Being, attackee);

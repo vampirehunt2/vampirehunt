@@ -16,6 +16,7 @@ namespace VH.Engine.World.Items {
 
         #region fields
 
+        private XmlElement prototype;
 
         #endregion
 
@@ -38,6 +39,13 @@ namespace VH.Engine.World.Items {
 
         public override void Create(XmlElement prototype) {
             base.Create(prototype);
+            this.prototype = prototype;
+        }
+
+        public Item Clone() {
+            Item newItem = new Item();
+            newItem.Create(prototype);
+            return newItem;
         }
 
         public override bool Equals(object obj) {

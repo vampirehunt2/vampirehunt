@@ -19,6 +19,10 @@ namespace VH.Engine.World.Items {
             return (Item)Generate("//item");
         }
 
+        public Item CreateRandomItem(string xpath) {
+            return (Item)Generate("//item" + xpath);
+        }
+
         public Item CreateItemByDanger(int danger) {
             return (Item)Generate("//item[@danger<=" + danger + "]");
         }

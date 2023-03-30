@@ -36,6 +36,13 @@ namespace VH.Game.World.Beings {
         private const string BACKPACK = "backpack";
         private const string PROFESSION = "profession";
 
+        public const int HEADGER_SLOT = 0;
+        public const int NECKWEAR_SLOT = 1;
+        public const int WEAPON_SLOT = 2;
+        public const int ARMOR_SLOT = 3;
+        public const int MISSLE_SLOT = 4;
+
+
         #endregion
 
         #region fields
@@ -60,10 +67,9 @@ namespace VH.Game.World.Beings {
             equipment = new Equipment(Translator.Instance["equipment"],
                 new HeadgearSlot(),
                 new NeckwearSlot(),
-                new WeaponSlot(), 
+                new WeaponSlot(),
                 new ArmorSlot(),
-                new RingSlot(Translator.Instance["right-ring"]),
-                new RingSlot(Translator.Instance["left-ring"])
+                new MissleSlot()
             );
 
             stats = new StatSet(Translator.Instance["stats"],
@@ -80,7 +86,8 @@ namespace VH.Game.World.Beings {
                 new VhSkill("searching", Translator.Instance["searching"], 0, Stats["Pe"], Stats["In"]),
                 new VhSkill("identification", Translator.Instance["identification"], 0, Stats["In"], Stats["In"]),
                 new VhSkill("magick", Translator.Instance["magick"], 0, Stats["In"], Stats["In"]),
-                new VhSkill("reading", Translator.Instance["reading"], 0, Stats["In"], Stats["In"])
+                new VhSkill("reading", Translator.Instance["reading"], 0, Stats["In"], Stats["In"]),
+                new VhSkill("missle-weapons", Translator.Instance["missle-weapons"], 0, Stats["Dx"], Stats["Pe"])
             );
 
             Accusativ = Translator.Instance["you"];

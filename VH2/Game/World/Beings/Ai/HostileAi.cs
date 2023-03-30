@@ -27,7 +27,7 @@ namespace VH.Game.World.Beings.Ai {
             // try to find oponent
             Being oponent = getOponent();
             if (oponent != null) {
-                if (isAdjacentTo(oponent)) return new AttackAction(Being, oponent);
+                if (isAdjacentTo(oponent)) return new MeleeAttackAction(Being, oponent);
                 else return new MoveAction(Being, getStepTowards(getPossibleSteps(Being, oponent.Position)));
             }
             // try to move in a random direction
