@@ -15,21 +15,35 @@ using VH.Game.World.Items.Missles;
 namespace VH.Game.World.Beings.Actions {
     public class VhShootAction: ShootAction {
 
+        Missle missle; 
+
         public VhShootAction(Being performer): base(performer, 10) {
         }
 
         public override bool Perform() {
             if (!(performer is IEquipmentBeing)) return false;
-            EquipmentSlot slot = (performer as IEquipmentBeing).Equipment[WeaponSlot.ID];
-            if (slot == null) return false;
-            Item item = slot.Item;
-            if (item == null || !(item is MissleWeapon)) {
+            EquipmentSlot missleWeaponSlot = (performer as IEquipmentBeing).Equipment[WeaponSlot.ID];
+            if (missleWeaponSlot == null) return false;
+            Item missleWeapon = missleWeaponSlot.Item;
+            if (missleWeapon == null || !(missleWeapon is MissleWeapon)) {
                 notify("no-missle-weapon");
+                return false;
+            }
+            MissleSlot missleSlot = (MissleSlot)(performer as IEquipmentBeing).Equipment[MissleSlot.ID];
+            if (missleSlot == null) return false;
+            Item item = missleSlot.Item;
+            if (item is ItemStack) item = (item as ItemStack).Item;
+            if (item == null) {
+                notify("no-missle");
                 return false;
             }
             AbstractAttackAction attackAction = new MissleAttackAction(performer);
             Attack = attackAction;
-            return base.Perform();
+            missle = missleSlot.NextMissle();
+            if (base.Perform()) {
+                return true;
+            }
+            return false;
         }
 
         protected override void missleStep() {
@@ -37,7 +51,9 @@ namespace VH.Game.World.Beings.Actions {
             char character = controller.ViewPort.GetDisplayCharacter(controller.Map[pos]);
             ConsoleColor color = controller.ViewPort.GetDisplayColor(controller.Map[pos]);
             ItemFacade facade = new ItemFacade();
-            Missle missleAnimation = (Missle)facade.CreateItemById("arrow");
+            Missle missleAnimation = new Missle();
+            missleAnimation.Character = missle.Character;
+            missleAnimation.Color = missle.Color;
             missleAnimation.Position = pos;
             controller.ViewPort.Display(missleAnimation, controller.FieldOfVision, performer.Position);
             controller.ViewPort.Refresh(pos); 

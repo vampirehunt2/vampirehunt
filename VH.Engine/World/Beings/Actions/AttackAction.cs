@@ -10,6 +10,10 @@ namespace VH.Engine.World.Beings.Actions {
         public AttackAction(Being performer) : base(performer) {
         }
 
+        public AttackAction(Being performer, Being attackee) : base(performer) {
+            this.attackee = attackee;
+        }
+
         protected override int Attack {
             get { return Rng.Random.Next(performer.Attack); }
         }

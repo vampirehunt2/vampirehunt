@@ -20,5 +20,25 @@ namespace VH.Game.World.Beings {
             return item is Missle ||
                 item is ItemStack && (item as ItemStack).Item is Missle;
         }
+
+        public Missle NextMissle() {
+            if (Item == null) return null;
+            if (Item is Missle) {
+                Missle missle = (Missle)Item;
+                Item = null;
+                return missle;
+            }
+            if (Item is ItemStack) {
+                ItemStack stack = (ItemStack)Item;
+                if (stack.Count == 0) return null;
+                Item stackedItem = stack.Item;
+                if (stackedItem is Missle) {
+                    stackedItem = stack.RemoveFirst();
+                    if (stack.Count == 0) Item = null;
+                    return (Missle)stackedItem;
+                }
+            }
+            return null;
+        }
     }
 }

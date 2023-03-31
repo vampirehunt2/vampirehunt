@@ -72,6 +72,8 @@
     <Compile Include="Game\World\Beings\Actions\ConsumeToadVenomAction.cs" />
     <Compile Include="Game\World\Beings\Actions\ConsumeWormwoodAction.cs" />
     <Compile Include="Game\World\Beings\Actions\DigAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\MeleeAttackAction.cs" />
+    <Compile Include="Game\World\Beings\Actions\MissleAttackAction.cs" />
     <Compile Include="Game\World\Beings\Actions\ReadAction.cs" />
     <Compile Include="Game\World\Beings\Actions\StackingDropAction.cs" />
     <Compile Include="Game\World\Beings\Actions\EquipAction.cs" />

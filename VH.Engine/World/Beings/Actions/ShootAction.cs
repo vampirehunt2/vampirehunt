@@ -48,7 +48,7 @@ namespace VH.Engine.World.Beings.Actions {
                 if (attackee != null) {
                     hit = true;
                     if (attack == null) {
-                        attack = new MeleeAttackAction(performer, attackee);
+                        attack = new AttackAction(performer, attackee);
                     } else {
                         attack.Attackee = attackee;
                     }

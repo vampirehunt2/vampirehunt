@@ -9,11 +9,9 @@ using VH.Engine.World.Items;
 using VH.Engine.World.Beings.AI.Stimuli;
 using VH.Engine.Random;
 
-namespace VH.Engine.World.Beings.Actions {
+namespace VH.Game.World.Beings.Actions {
     
     public class MeleeAttackAction: AbstractAttackAction {
-
-        
 
         #region constructors
 

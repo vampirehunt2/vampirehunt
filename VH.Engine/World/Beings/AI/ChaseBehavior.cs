@@ -17,7 +17,7 @@ namespace VH.Engine.World.Beings.AI {
         }
 
         public override AbstractAction SelectAction() {
-            if (isAdjacentTo(Oponent)) return new MeleeAttackAction(Being, Oponent);
+            if (isAdjacentTo(Oponent)) return new AttackAction(Being, Oponent);
             else return new MoveAction(Being, getStepTowards(getPossibleSteps(Being, Oponent.Position)));
         }
 
