@@ -78,6 +78,7 @@
 	<message key="pull-in-water" person2="%Wciągasz % pod wodę" person3="% wciąga cię pod wodę!"/>
 	<message key="no-missle-weapon" person2="Może spróbuj z jakimś łukiem" person3=""/>
 	<message key="no-missle" person2="Nie masz amunicji!" person3=""/>
+	<message key="hit-wall" person2="Boink!" person3="Boink!"/> 
 </messages>
 
 

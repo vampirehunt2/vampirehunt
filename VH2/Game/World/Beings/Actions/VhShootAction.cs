@@ -64,5 +64,16 @@ namespace VH.Game.World.Beings.Actions {
             controller.ViewPort.Refresh(pos);
         }
 
+        protected override bool isShootable(Position position) {
+            GameController gc = GameController.Instance;
+            char c = gc.ViewPort.GetDisplayCharacter(gc.Level.Map[position]);
+            return
+                c == Terrain.Get("upstair").Character ||
+                c == Terrain.Get("downstair").Character ||
+                c == Terrain.Get("ground").Character ||
+                c == Terrain.Get("floor").Character ||
+                c == Terrain.Get("open-door").Character;
+        }
+
     }
 }

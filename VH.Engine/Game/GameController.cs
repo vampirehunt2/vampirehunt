@@ -14,6 +14,7 @@ using VH.Engine.World.Beings;
 using VH.Engine.Time;
 using VH.Engine.Persistency;
 using System.Xml;
+using System.Drawing;
 
 namespace VH.Engine.Game {
 

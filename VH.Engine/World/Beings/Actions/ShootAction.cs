@@ -44,6 +44,10 @@ namespace VH.Engine.World.Beings.Actions {
                 currentRange++;
                 pos = pos.AddStep(step);
                 missleStep();
+                if (!isShootable(pos)) {
+                    notify("hit-wall");
+                    break;
+                }
                 Being attackee = GameController.Instance.GetBeingAt(pos);
                 if (attackee != null) {
                     hit = true;
@@ -63,6 +67,16 @@ namespace VH.Engine.World.Beings.Actions {
         #region protected methods
 
         protected virtual void missleStep() { }
+
+        protected virtual bool isShootable(Position position) {
+            GameController gc = GameController.Instance;
+            char c = gc.ViewPort.GetDisplayCharacter(gc.Level.Map[position]);
+            return
+                c == Terrain.Get("upstair").Character ||
+                c == Terrain.Get("downstair").Character ||
+                c == Terrain.Get("ground").Character ||
+                c == Terrain.Get("open-door").Character;
+        }
 
         #endregion
 
