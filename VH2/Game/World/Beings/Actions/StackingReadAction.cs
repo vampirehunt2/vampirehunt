@@ -5,6 +5,7 @@ using System.Text;
 using VH.Game.World.Items;
 using VH.Engine.World.Beings;
 using VH.Engine.World.Beings.Actions;
+using VH.Engine.World.Items;
 
 namespace VH.Game.World.Beings.Actions {
 
@@ -18,7 +19,7 @@ namespace VH.Game.World.Beings.Actions {
         }
 
         public override bool Perform() {
-            ((IBackPackBeing)performer).BackPack.RemoveSingleItem(item);
+            (((IBackPackBeing)performer).BackPack as StackingBackPack).RemoveSingleItem(item);
             item.Position = performer.Position.Clone();
             if (((ISkillsBeing)performer).Skills["reading"].Roll()) {
                 notify(item.UseKind, item);

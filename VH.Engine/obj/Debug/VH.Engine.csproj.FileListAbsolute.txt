@@ -9,8 +9,8 @@ C:\git\vampirehunt\VH.Engine\obj\Debug\VH.Engine.csproj.CoreCompileInputs.cache
 C:\git\vampirehunt\VH.Engine\obj\Debug\VH.Engine.dll
 C:\git\vampirehunt\VH.Engine\obj\Debug\VH.Engine.pdb
 C:\git\vampirehunt\VH.Engine\obj\Debug\VH.Engine.csprojAssemblyReference.cache
-C:\Users\P40095820\Source\Repos\vampirehunt2\vampirehunt\VH.Engine\obj\Debug\VH.Engine.csproj.AssemblyReference.cache
-C:\Users\P40095820\Source\Repos\vampirehunt2\vampirehunt\VH.Engine\obj\Debug\VH.Engine.csproj.CoreCompileInputs.cache
+C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\obj\Debug\VH.Engine.csproj.AssemblyReference.cache
+C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\obj\Debug\VH.Engine.csproj.CoreCompileInputs.cache
 C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\bin\Debug\VH.Engine.dll
 C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\bin\Debug\VH.Engine.pdb
 C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\obj\Debug\VH.Engine.dll

@@ -16,8 +16,8 @@ namespace VH.Game.World.Beings.Actions {
 
         public override bool Perform() {
             if (Performer is IBackPackBeing && Attackee is IBackPackBeing) {
-                StackingBackPack performerBackPack = ((IBackPackBeing)Performer).BackPack;
-                StackingBackPack attackeeBackPack = ((IBackPackBeing)Attackee).BackPack;
+                StackingBackPack performerBackPack = ((IBackPackBeing)Performer).BackPack as StackingBackPack;
+                StackingBackPack attackeeBackPack = ((IBackPackBeing)Attackee).BackPack as StackingBackPack;
                 if (!performerBackPack.Full) {
                     if (dxCheck()) {
                         notify("unsuccessful-steal");

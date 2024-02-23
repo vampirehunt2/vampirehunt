@@ -26,7 +26,7 @@ namespace VH.Game.World.Beings {
 
         #region properties
 
-        public StackingBackPack BackPack {
+        public BackPack BackPack {
             get { return backPack; }
         }
 

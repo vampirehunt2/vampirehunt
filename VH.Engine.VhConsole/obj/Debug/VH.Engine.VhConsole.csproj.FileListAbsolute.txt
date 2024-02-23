@@ -19,10 +19,10 @@ C:\git\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.csproj.Core
 C:\git\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.csproj.CopyComplete
 C:\git\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.dll
 C:\git\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.pdb
-C:\Users\P40095820\Source\Repos\vampirehunt2\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.csproj.AssemblyReference.cache
-C:\Users\P40095820\Source\Repos\vampirehunt2\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.ConsoleForm.resources
-C:\Users\P40095820\Source\Repos\vampirehunt2\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.csproj.GenerateResource.cache
-C:\Users\P40095820\Source\Repos\vampirehunt2\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.csproj.CoreCompileInputs.cache
+C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.csproj.AssemblyReference.cache
+C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.ConsoleForm.resources
+C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.csproj.GenerateResource.cache
+C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine.VhConsole\obj\Debug\VH.Engine.VhConsole.csproj.CoreCompileInputs.cache
 C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine.VhConsole\bin\Debug\VH.Engine.VhConsole.dll
 C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine.VhConsole\bin\Debug\VH.Engine.VhConsole.pdb
 C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine.VhConsole\bin\Debug\VH.Engine.dll

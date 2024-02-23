@@ -11,7 +11,7 @@ namespace VH.Engine.World.Items {
     /// <summary>
     /// Represents a set of items that a Being has with it.
     /// </summary>
-    public class StackingBackPack: AbstractPersistent {
+    public class StackingBackPack: BackPack {
 
         #region fields
 
@@ -81,7 +81,7 @@ namespace VH.Engine.World.Items {
             if (existingItem == null) {
                 items.Add(newItem);
             } else {
-                if (!(existingItem is ItemStack) && !(newItem is ItemStack)) {
+                if (!(existingItem is Stack) && !(newItem is Stack)) {
                     ItemStack stack = new ItemStack(existingItem);
                     stack.Add(newItem);
                     Remove(existingItem);

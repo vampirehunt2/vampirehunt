@@ -15,7 +15,7 @@ namespace VH.Game.World.Beings.Actions {
         public StackingDropAction(Being performer): base(performer) { }
 
         public override bool Perform() {
-            StackingBackPack backpack = ((IBackPackBeing)performer).BackPack;
+            StackingBackPack backpack = ((IBackPackBeing)performer).BackPack as StackingBackPack;
             object[] objects = backpack.Items.ToArray();
             if (objects.Length == 0) {
                 notify("no-suitable-items");

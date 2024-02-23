@@ -45,11 +45,11 @@ C:\git\vampirehunt\VH2\obj\x86\Debug\VH.csproj.CoreCompileInputs.cache
 C:\git\vampirehunt\VH2\obj\x86\Debug\VH.csproj.CopyComplete
 C:\git\vampirehunt\VH2\obj\x86\Debug\VH2.exe
 C:\git\vampirehunt\VH2\obj\x86\Debug\VH2.pdb
-C:\Users\P40095820\Source\Repos\vampirehunt2\vampirehunt\VH2\obj\x86\Debug\VH.csproj.AssemblyReference.cache
-C:\Users\P40095820\Source\Repos\vampirehunt2\vampirehunt\VH2\obj\x86\Debug\VH.csproj.SuggestedBindingRedirects.cache
-C:\Users\P40095820\Source\Repos\vampirehunt2\vampirehunt\VH2\obj\x86\Debug\VH.Properties.Resources.resources
-C:\Users\P40095820\Source\Repos\vampirehunt2\vampirehunt\VH2\obj\x86\Debug\VH.csproj.GenerateResource.cache
-C:\Users\P40095820\Source\Repos\vampirehunt2\vampirehunt\VH2\obj\x86\Debug\VH.csproj.CoreCompileInputs.cache
+C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH2\obj\x86\Debug\VH.csproj.AssemblyReference.cache
+C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH2\obj\x86\Debug\VH.csproj.SuggestedBindingRedirects.cache
+C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH2\obj\x86\Debug\VH.Properties.Resources.resources
+C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH2\obj\x86\Debug\VH.csproj.GenerateResource.cache
+C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH2\obj\x86\Debug\VH.csproj.CoreCompileInputs.cache
 C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH2\bin\Debug\Data\Conf\keybindings.xml
 C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH2\bin\Debug\Data\Resources\items.xml
 C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH2\bin\Debug\Data\Resources\levels.xml

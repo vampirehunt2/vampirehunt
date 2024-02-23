@@ -110,7 +110,7 @@ namespace VH.Game.World.Beings {
             get { return skills; }
         }
 
-        public StackingBackPack BackPack {
+        public BackPack BackPack {
             get { return backpack; }
         }
 

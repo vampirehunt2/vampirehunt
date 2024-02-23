@@ -37,7 +37,7 @@ namespace VH.Game.World.Beings.Professions {
             equipment.Slots[2].Item = facade.CreateItemById("xbow");
             equipment.Slots[3].Item = facade.CreateItemById("leather-jacket");
 
-            StackingBackPack backpack = (being as IBackPackBeing).BackPack;
+            StackingBackPack backpack = (being as IBackPackBeing).BackPack as StackingBackPack;
             backpack.Add(facade.CreateItemById("pole"));
             backpack.Add(facade.CreateRandomItem("[@type-name='VH.Game.World.Items.Potions.Potion']"));
 

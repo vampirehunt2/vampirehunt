@@ -19,7 +19,7 @@ namespace VH.Game.World.Beings.Actions {
         }
 
         public override bool Perform() {
-            ((IBackPackBeing)performer).BackPack.RemoveSingleItem(item);
+            (((IBackPackBeing)performer).BackPack as StackingBackPack).RemoveSingleItem(item);
             item.Position = performer.Position.Clone();
             notify(item.UseKind, item);
             item.Use(performer);
