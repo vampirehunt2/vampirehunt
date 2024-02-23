@@ -14,38 +14,40 @@ namespace VH.Engine.World.Beings.Actions {
 
     public class MoveAction: AbstractAction {
 
-        #region constants
+        #region fields
 
-        private const float CONFUSION_RATE = 0.5f;
+        protected Step step;
+        protected bool canTryOpenDoors;
+        protected Position newPosition;
+        protected GameController controller = GameController.Instance;
+        
 
         #endregion
 
-        #region fields
+        #region constructors
 
-        private Step step;
-        bool canTryOpenDoors;
-        private GameController controller = GameController.Instance;
+        public MoveAction(Being performer, Step step): base(performer) {
+            this.step = step;
+            newPosition = performer.Position.AddStep(step);
+        }
+
+        #endregion
+
+        #region properties
+
+        protected char Feature {
+            get { return controller.ViewPort.GetDisplayCharacter(controller.Map[newPosition]); }
+        }
+
+        protected Being BeingAtNewPosition {
+            get { return controller.GetBeingAt(newPosition); }
+        }
 
         #endregion
 
         #region public methods
 
-        public MoveAction(Being performer, Step step): base(performer) {
-            this.step = step;
-        }
-
         public override bool Perform() {
-            TempSet temps = (Performer as ITempsBeing).Temps;
-            if (temps["confused"]) {
-                // TODO confusion resistance may also be aquired through items
-                if (!temps["confusion-resistance"] || Rng.Random.NextFloat() > CONFUSION_RATE) {
-                    step = Step.CreateRandomStep();
-                    notify("stagger");
-                } else {
-                    notify("no-stagger");
-                }
-            }
-            Position newPosition = performer.Position.AddStep(step);
 
             // check if new position is within level limits
             if (newPosition.X < 0 || newPosition.Y < 0 ||
@@ -53,27 +55,19 @@ namespace VH.Engine.World.Beings.Actions {
                 newPosition.Y >= controller.Map.Height) {
                 return false;
             }
-
-            // moving into a closed door results in an attempt to open them
-            if (performer.CanWalkOn(Terrain.Get("open-door").Character) && controller.Map[newPosition] == Terrain.Get("closed-door").Character) {
-                return new OpenDoorAction(performer, step).Perform();
-            }
-
             // moving onto a wall results in an attept to dig through it
 
             // moving into a Being results in attacking it
-            Being being = controller.GetBeingAt(newPosition);
-            if (being != null && being != performer) return new AttackAction(performer, being).Perform();
+            if (BeingAtNewPosition != null && BeingAtNewPosition != performer) {
+                return new AttackAction(performer, BeingAtNewPosition).Perform();
+            }
 
             // check if performer is able to walk through whatever is at the level at new position, otherwise
             // interact with the terrain at the new position
             // for example:moving onto a wall results in an attept to dig through it
-            char feature = controller.ViewPort.GetDisplayCharacter(controller.Map[newPosition]);
-            if (!performer.CanWalkOn(feature)) {
+            
+            if (!performer.CanWalkOn(Feature)) {
                 if (Performer.Ai.InteractWithEnvironment(newPosition)) return true;
-            }
-            if (!performer.CanWalkOn(feature)  || (being != null && being != performer)) {
-                if ((Performer as ITempsBeing).Temps["blind"]) notify("boom");
                 return false;
             }
 

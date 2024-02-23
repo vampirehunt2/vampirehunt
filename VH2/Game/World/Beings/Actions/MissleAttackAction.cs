@@ -8,7 +8,6 @@ using VH.Engine.World.Beings;
 using VH.Engine.World.Beings.Actions;
 using VH.Engine.World.Items;
 using VH.Engine.World.Items.Weapons;
-using VH.Game.World.Items.Missles;
 
 namespace VH.Game.World.Beings.Actions {
     public class MissleAttackAction : AbstractAttackAction {

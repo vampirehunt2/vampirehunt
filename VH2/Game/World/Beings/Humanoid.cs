@@ -20,13 +20,13 @@ namespace VH.Game.World.Beings {
 
         #region fields
 
-        private StackingBackPack backPack = new StackingBackPack("", 10);
+        private BackPack backPack = new BackPack("", 10);
 
         #endregion
 
         #region properties
 
-        public StackingBackPack BackPack {
+        public BackPack BackPack {
             get { return backPack; }
         }
 
@@ -44,7 +44,7 @@ namespace VH.Game.World.Beings {
 
         public override void FromXml(XmlElement element) {
             base.FromXml(element);
-            backPack = GetElement(BACK_PACK) as StackingBackPack;
+            backPack = GetElement(BACK_PACK) as BackPack;
         }
 
         public override XmlElement ToXml(string name, XmlDocument doc) {

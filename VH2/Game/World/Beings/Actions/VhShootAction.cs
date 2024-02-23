@@ -10,12 +10,11 @@ using VH.Engine.World.Beings;
 using VH.Engine.World.Beings.Actions;
 using VH.Engine.World.Items;
 using VH.Engine.World.Items.Weapons;
-using VH.Game.World.Items.Missles;
 
 namespace VH.Game.World.Beings.Actions {
     public class VhShootAction: ShootAction {
 
-        Missle missle; 
+        Ammo missle; 
 
         public VhShootAction(Being performer): base(performer, 10) {
         }
@@ -31,17 +30,16 @@ namespace VH.Game.World.Beings.Actions {
             }
             MissleSlot missleSlot = (MissleSlot)(performer as IEquipmentBeing).Equipment[MissleSlot.ID];
             if (missleSlot == null) return false;
-            Item item = missleSlot.Item;
-            if (item is ItemStack) item = (item as ItemStack).Item;
-            if (item == null) {
+            missle = missleSlot.Item as Ammo;
+            if (missle == null || missle.Number == 0) {
                 notify("no-missle");
                 return false;
             }
             AbstractAttackAction attackAction = new MissleAttackAction(performer);
             Attack = attackAction;
-            missle = missleSlot.NextMissle();
+            
             if (base.Perform()) {
-                return true;
+                if (missle.Spend(1)) return true;
             }
             return false;
         }
@@ -51,7 +49,7 @@ namespace VH.Game.World.Beings.Actions {
             char character = controller.ViewPort.GetDisplayCharacter(controller.Map[pos]);
             ConsoleColor color = controller.ViewPort.GetDisplayColor(controller.Map[pos]);
             ItemFacade facade = new ItemFacade();
-            Missle missleAnimation = new Missle();
+            Ammo missleAnimation = new Ammo();
             missleAnimation.Character = missle.Character;
             missleAnimation.Color = missle.Color;
             missleAnimation.Position = pos;

@@ -41,7 +41,7 @@ namespace VH.Engine.World.Beings.Actions {
         }
 
         public bool PickUp() {
-            StackingBackPack backpack = ((IBackPackBeing)performer).BackPack;
+            BackPack backpack = ((IBackPackBeing)performer).BackPack;
             if (backpack.Full) {
                 notify("backpack-full", item);
                 return false;

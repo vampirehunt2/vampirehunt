@@ -43,19 +43,19 @@ namespace VH.Game.World.Beings.Ai {
             //
             if (command == "wait") action = new WaitAction(pc);
             //
-            else if (command == "north") action = new MoveAction(pc, Step.NORTH);
-            else if (command == "south") action = new MoveAction(pc, Step.SOUTH);
-            else if (command == "east") action = new MoveAction(pc, Step.EAST);
-            else if (command == "west") action = new MoveAction(pc, Step.WEST);
-            else if (command == "north-east") action = new MoveAction(pc, Step.NORTH_EAST);
-            else if (command == "north-west") action = new MoveAction(pc, Step.NORTH_WEST);
-            else if (command == "south-east") action = new MoveAction(pc, Step.SOUTH_EAST);
-            else if (command == "south-west") action = new MoveAction(pc, Step.SOUTH_WEST);
+            else if (command == "north") action = new VhMoveAction(pc, Step.NORTH);
+            else if (command == "south") action = new VhMoveAction(pc, Step.SOUTH);
+            else if (command == "east") action = new VhMoveAction(pc, Step.EAST);
+            else if (command == "west") action = new VhMoveAction(pc, Step.WEST);
+            else if (command == "north-east") action = new VhMoveAction(pc, Step.NORTH_EAST);
+            else if (command == "north-west") action = new VhMoveAction(pc, Step.NORTH_WEST);
+            else if (command == "south-east") action = new VhMoveAction(pc, Step.SOUTH_EAST);
+            else if (command == "south-west") action = new VhMoveAction(pc, Step.SOUTH_WEST);
             else if (command == "take-stairs") action = new TakeStairsAction(pc);
             else if (command == "close-door") action = new CloseDoorAction(pc);
-            else if (command == "pick-up") action = new VhStackingPickUpAction(pc);
-            else if (command == "drop") action = new StackingDropAction(pc);
-            else if (command == "use") action = new StackingUseItemAction(pc);
+            else if (command == "pick-up") action = new VhPickUpAction(pc);
+            else if (command == "drop") action = new DropAction(pc);
+            else if (command == "use") action = new UseItemAction(pc);
             else if (command == "manage-equipment") action = new ManageEquipmentAction(pc);
             else if (command == "shoot") action = new VhShootAction(pc);
             //
@@ -69,13 +69,13 @@ namespace VH.Game.World.Beings.Ai {
         }
 
         public override object SelectTarget(object[] objects, Engine.World.Beings.Actions.AbstractAction action) {
-            if (action is StackingDropAction) return selectDropTarget(objects);
+            if (action is DropAction) return selectDropTarget(objects);
             if (action is PickUpAction) return selectPickUpTarget(objects);
             if (action is CloseDoorAction) return selectDirection(objects);
             if (action is ShootAction) return selectDirection(objects);
             if (action is ManageEquipmentAction) return selectDeequipTarget(objects);
             if (action is EquipAction) return selectEquipTarget(objects);
-            if (action is StackingUseItemAction) return selectUseTarget(objects);
+            if (action is UseItemAction) return selectUseTarget(objects);
             return null;
         }
 
@@ -140,10 +140,7 @@ namespace VH.Game.World.Beings.Ai {
         private object selectUseTarget(object[] objects) {
             List<Item> usableItems = new List<Item>();
             foreach (Item item in objects) {
-                if (item is UsableItem ||
-                   (item is ItemStack && ((ItemStack)item).Item is UsableItem)) {
-                    usableItems.Add(item);
-                }
+                if (item is UsableItem) usableItems.Add(item);
             }
             return getMenuSelection("select-item", usableItems.ToArray());
         }

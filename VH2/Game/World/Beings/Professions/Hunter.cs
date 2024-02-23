@@ -37,23 +37,14 @@ namespace VH.Game.World.Beings.Professions {
             equipment.Slots[2].Item = facade.CreateItemById("xbow");
             equipment.Slots[3].Item = facade.CreateItemById("leather-jacket");
 
-            StackingBackPack backpack = (being as IBackPackBeing).BackPack;
+            BackPack backpack = (being as IBackPackBeing).BackPack;
             backpack.Add(facade.CreateItemById("pole"));
             backpack.Add(facade.CreateRandomItem("[@type-name='VH.Game.World.Items.Potions.Potion']"));
 
-            int missleCount = Rng.Random.Next(MAX_STARTING_MISSLES - MIN_STARTING_MISSLES) + MIN_STARTING_MISSLES;
-            ItemStack missles = new ItemStack();
-            for (int i = 0; i < missleCount; i++) missles.Add(facade.CreateItemById("quarrel"));
-            equipment.Slots[4].Item = missles;
+            equipment.Slots[4].Item = facade.CreateItemById("quarrel");
 
             foreach (Item item in backpack.Items) {
                 if (item is MagicalItem) (item as MagicalItem).Identify();
-                if (item is ItemStack) {
-                    foreach (Item subitem in (item as ItemStack).Items) {
-                        if (item is MagicalItem) (subitem as MagicalItem).Identify();
-                    }
-
-                }
             }
             being.Color = equipment.Slots[3].Item.Color;
         }

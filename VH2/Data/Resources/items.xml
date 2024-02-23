@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <items vamgine-version="1" vh-version="2">
-	<item type-name="VH.Game.World.Items.Missles.Missle" assembly-name="VH2.exe" id="arrow" name="strzała" accusativ="strzałę" plural="strzały" character="/" color="DarkYellow" danger="0" />
-	<item type-name="VH.Game.World.Items.Missles.Missle" assembly-name="VH2.exe" id="quarrel" name="bełt" accusativ="bełt" plural="bełty" character="/" color="DarkGray" danger="1" />
-	<item type-name="VH.Game.World.Items.Missles.Missle" assembly-name="VH2.exe" id="round" name="ładunek" accusativ="ładunek" plural="ładunki" character="'" color="Gray" danger="4" />
+	<item type-name="VH.Engine.World.Items.Ammo" assembly-name="VH.Engine.dll" id="arrow" name="strzała" accusativ="strzałę" plural="strzały" character="/" color="DarkYellow" danger="0" attack="1" defense="0"/>
+	<item type-name="VH.Engine.World.Items.Ammo" assembly-name="VH.Engine.dll" id="quarrel" name="bełt" accusativ="bełt" plural="bełty" character="/" color="DarkGray" danger="1" attack="3" defense="0" />
+	<item type-name="VH.Engine.World.Items.Ammo" assembly-name="VH.Engine.dll" id="round" name="ładunek" accusativ="ładunek" plural="ładunki" character="'" color="Gray" danger="4" attack="2" defense="0"/>
 	<item type-name="VH.Game.World.Items.Weapons.Bow" assembly-name="VH2.exe" id="bow" name="łuk" accusativ="łuk" plural="łuki" character="}" color="DarkYellow" danger="2" attack="2" defense="0" />
 	<item type-name="VH.Game.World.Items.Weapons.XBow" assembly-name="VH2.exe" id="xbow" name="kusza" accusativ="kuszę" plural="kusze" character="}" color="DarkGray" danger="3" attack="3" defense="0" />
 	<item type-name="VH.Game.World.Items.Weapons.Firearm" assembly-name="VH2.exe" id="gun" name="pistolet" accusativ="pistolet" plural="pistolety" character="}" color="Gray" danger="5" attack="3" defense="0" />
