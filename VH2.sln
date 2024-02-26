@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VH.Engine", "VH.Engine\VH.E
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VH.Engine.VhConsole", "VH.Engine.VhConsole\VH.Engine.VhConsole.csproj", "{031B0BCC-AD1D-4D29-993A-79F1FE19EDC5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRoguelike", "..\..\MyRoguelike\MyRoguelike\MyRoguelike.csproj", "{E7F5BF30-43EA-4FCA-A228-FAE44918A72D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRoguelike", "MyRoguelike\MyRoguelike.csproj", "{E7F5BF30-43EA-4FCA-A228-FAE44918A72D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

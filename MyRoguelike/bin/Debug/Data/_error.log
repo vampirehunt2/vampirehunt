@@ -1,0 +1,15 @@
+Object reference not set to an instance of an object.
+   at VH.Engine.Display.MessageManager.get_Item(String key, Person person) in C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\Display\MessageManager.cs:line 45
+   at VH.Engine.Display.MessageManager.getMessage(Person person, String key, String[] parameters) in C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\Display\MessageManager.cs:line 101
+   at VH.Engine.Display.MessageManager.ShowMessage(String key, AbstractEntity performer, AbstractEntity target, Boolean force) in C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\Display\MessageManager.cs:line 69
+   at VH.Engine.Display.MessageManager.ShowMessage(String key, AbstractEntity performer, AbstractEntity target) in C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\Display\MessageManager.cs:line 62
+   at VH.Engine.Display.MessageManager.ShowMessage(String key, AbstractEntity performer) in C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\Display\MessageManager.cs:line 87
+   at VH.Engine.World.Beings.AI.BaseAi.Notify(String messageKey) in C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\World\Beings\AI\BaseAi.cs:line 42
+   at VH.Engine.World.Beings.Actions.AbstractAction.notify(String messageKey) in C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\World\Beings\Actions\AbstractAction.cs:line 88
+   at VH.Engine.World.Beings.Actions.OpenDoorAction.Perform() in C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\World\Beings\Actions\OpenDoorAction.cs:line 30
+   at MyRoguelike.Game.Beings.Ai.MyPcAi.InteractWithEnvironment(Position position) in C:\Users\P40095820\source\repos\MyRoguelike\MyRoguelike\Game\Beings\Ai\MyPcAi.cs:line 49
+   at VH.Engine.World.Beings.Actions.MoveAction.Perform() in C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\World\Beings\Actions\MoveAction.cs:line 70
+   at MyRoguelike.Game.MyGameController.runTurn() in C:\Users\P40095820\source\repos\MyRoguelike\MyRoguelike\Game\MyGameController.cs:line 53
+   at VH.Engine.Game.GameController.runGame() in C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\Game\GameController.cs:line 220
+   at VH.Engine.Game.GameController.Play() in C:\Users\P40095820\source\repos\vampirehunt2\vampirehunt\VH.Engine\Game\GameController.cs:line 211
+   at VH2.Program.Main(String[] args) in C:\Users\P40095820\source\repos\MyRoguelike\MyRoguelike\Program.cs:line 19

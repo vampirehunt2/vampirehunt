@@ -52,3 +52,4 @@ aaa, Łowca Zabity przez nietoperza na poziomie Miasto
 aaa, Łowca Zabity przez  na poziomie Miasto
 aaa, Łowca Zabity przez  na poziomie Miasto
 aaa, Łowca Zabity przez ubożę na poziomie Miasto
+aaa, Kustosz Zabity przez  na poziomie Miasto

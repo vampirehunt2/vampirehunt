@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<items vamgine-version="1" my-game-version="1">
+	<item type-name="VH.Engine.World.Items.Item" assembly-name="VH.Engine.dll" id="my-item" name="My Item" accusativ="My Item" plural="My Items" character="?" color="DarkYellow" danger="0" />
+	<!-- Add other items here -->
+</items>

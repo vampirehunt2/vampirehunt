@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<monsters>
+	<monster type-name="VH.Engine.World.Beings.Monster" assembly-name="VH.Engine.dll" ai-type-name="VH.Engine.World.Beings.AI.NeutralBehavior" ai-assembly-name="VH.Engine.dll" id="my-monster" name="Monster" accusativ="Monster" plural="Monsters" character="M" race="human" color="DarkYellow" speed="0.9" danger="0" attack="3" defense="3" health="3" tags=""/>
+</monsters>

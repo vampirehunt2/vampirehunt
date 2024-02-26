@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<levels
+  root="Root Level"
+  default-width="48"
+  default-height="48"
+  default-generator="dungeon"
+>
+	<generator name="dungeon" type="VH.Engine.Levels.DungeonMapGenerator" assembly="VH.Engine.dll"/>
+	<!-- declare other generators here -->
+
+	<level name="Root Level" persistent="false" bidirectional="false" generator="dungeon" danger="0"/>
+	<level name="Second Level" persistent="false" bidirectional="false" generator="dungeon" danger="5"/>
+	<!-- add other levels below -->
+
+	<connection parent="Root Level" child="Second Level"/>
+	<!-- connect your levels here -->
+
+
+</levels>
+

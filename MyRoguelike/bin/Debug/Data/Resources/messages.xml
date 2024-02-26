@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<messages>
+	<message key="open-door" person2="% open the door" person3="The % opens the door" />
+	<message key="go-down" person2="% go down the stairs" person3="The % goes down the stairs" />
+	<message key="hit-wall" person2="Boink!" person3="Boink!"/>
+	<message key="attack" person2="% hit the %" person3="The % hits %" />
+	<message key="miss" person2="% miss the %" person3="The % misses %" />
+	<message key="killed" person2="% are dead!" person3="The % is dead!"/>
+	<message key="stuck-door" person2="The door is stuck!" person3="The % tries to open the door, but the door is stuck" />
+</messages>
+
+

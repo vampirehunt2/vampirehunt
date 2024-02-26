@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<monster-generation>
+	<level name="Root Level">
+		<generator mincount="1" maxcount="3" xpath="//monster[@id='my-monster']"/>
+	</level>
+	<level name="Second Level">
+		<generator mincount="5" maxcount="10" xpath="//monster[@id='my-monster']"/>
+	</level>
+</monster-generation>

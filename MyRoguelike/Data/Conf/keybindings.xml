@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<keybindings>
+	<binding command="north"        key="8"  name="Go North" />
+	<binding command="south"        key="2"  name="Go South" />
+	<binding command="east"         key="6"  name="Go East" />
+	<binding command="west"         key="4"  name="Go West" />
+	<binding command="north-east"   key="9"  name="Go North-East"/>
+	<binding command="north-west"   key="7"  name="Go North-West"/>
+	<binding command="south-east"   key="3"  name="Go South-East"/>
+	<binding command="south-west"   key="1"  name="Go South-West"/>
+	<binding command="wait"         key="5"  name="Wait"/>
+	<binding command="take-stairs"  key=">"  name="Take stairs"/>
+	<binding command="show-help"    key="?"  name="Help" />
+	<binding command="quit"         key="Q"  name="Quit"/>
+</keybindings>
+

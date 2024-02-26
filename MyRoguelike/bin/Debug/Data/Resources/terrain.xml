@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<terrain-kinds default-color="White">
+	<terrain key="corridor" character="129" display="."/>
+	<terrain key="closed-door" character="+"  color="Yellow" transparent="false"/>
+	<terrain key="open-door" character="/" color="Yellow"/>
+	<terrain key="ground" character="."/>
+	<terrain key="wall" character="#"  color="Blue" transparent="false"/>
+	<terrain key="downstair" character=">" />
+	<terrain key="upstair" character="&lt;"/>
+	<terrain key="darkness" character=" " transparent="false"/>
+	<terrain key="dark-floor" character="133" display=" " transparent="false"/>
+	<terrain key="dark-corridor" character="134" display=" " transparent="false"/>
+	<terrain key="dark-ground" character="135" display=" " transparent="false"/>
+	<terrain key="hidden-door" character="132" display="#" color="DarkYellow" transparent="false"/>
+</terrain-kinds>
