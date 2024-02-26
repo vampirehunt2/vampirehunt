@@ -74,67 +74,22 @@ namespace VH.Engine.Levels {
 
         #endregion
 
-        #region methods
-
-        void split() {
-            splitOrientation = chooseSplit();
-            if (splitOrientation == SplitOrientation.Horizontal) {
-                int r = Rng.Random.Next(width - 2 * MIN_CELL_SIZE);
-                r = r + MIN_CELL_SIZE;
-                child1 = new Cell(map, this);
-                child1.x1 = x1;
-                child1.y1 = y1;
-                child1.x2 = x1 + r;
-                child1.y2 = y2;
-                child2 = new Cell(map, this);
-                child2.x1 = x1 + r;
-                child2.y1 = y1;
-                child2.x2 = x2;
-                child2.y2 = y2;
+        #region public methods
+        public virtual void GenerateDungeon() {
+            for (int i = x1; i <= x2; ++i) {
+                for (int j = y1; j <= y2; ++j) {
+                    map[i, j] = Terrain.Get("wall").Character;
+                }
             }
-            if (splitOrientation == SplitOrientation.Vertical) {
-                int r = Rng.Random.Next(height - 2 * MIN_CELL_SIZE);
-                r = r + MIN_CELL_SIZE;
-                child1 = new Cell(map, this);
-                child1.x1 = x1;
-                child1.y1 = y1;
-                child1.x2 = x2;
-                child1.y2 = y1 + r;
-                child2 = new Cell(map, this);
-                child2.x1 = x1;
-                child2.y1 = y1 + r;
-                child2.x2 = x2;
-                child2.y2 = y2;
-            }
-
-            if (child1.canSplit) child1.split();
-            if (child2.canSplit) child2.split();
+            split();
+            makeRooms();
+            connectRooms();
         }
+        #endregion
 
-        SplitOrientation chooseSplit() {
-            if ((width > MIN_CELL_SIZE * 2) && !(height > MIN_CELL_SIZE * 2)) return SplitOrientation.Horizontal;
-            if ((height > MIN_CELL_SIZE * 2) && !(width > MIN_CELL_SIZE * 2)) return SplitOrientation.Vertical;
-            if ((width > MIN_CELL_SIZE * 2) && (height > MIN_CELL_SIZE * 2)) return (SplitOrientation)(Rng.Random.Next(2) + 1);
-            return SplitOrientation.None;
-        }
+        #region protected methods
 
-        Cell getSibling() {
-            if (parent == null) return null;
-            if (parent.child1 == this) return parent.child2;
-            if (parent.child2 == this) return parent.child1;
-            return null;
-        }
-
-        void makeRooms() {
-            if (hasChildren) {
-                child1.makeRooms();
-                child2.makeRooms();
-            } else {
-                createRoom();
-            }
-        }
-
-        void createRoom() {
+        protected virtual void createRoom() {
             room = new Room();
             int rw = Rng.Random.Next(width);
             rw = Math.Max(rw, MIN_ROOM_SIZE);
@@ -149,7 +104,7 @@ namespace VH.Engine.Levels {
             room.create(map);
         }
 
-        void connectRooms() {
+        protected virtual void connectRooms() {
             if (hasChildren) {
                 if (splitOrientation == SplitOrientation.Horizontal) {
                     int targetX = child1.x2;
@@ -197,7 +152,69 @@ namespace VH.Engine.Levels {
             }
         }
 
-        void getRooms(List<Room> rooms) {
+        protected virtual void split() {
+            splitOrientation = chooseSplit();
+            if (splitOrientation == SplitOrientation.Horizontal) {
+                int r = Rng.Random.Next(width - 2 * MIN_CELL_SIZE);
+                r = r + MIN_CELL_SIZE;
+                child1 = new Cell(map, this);
+                child1.x1 = x1;
+                child1.y1 = y1;
+                child1.x2 = x1 + r;
+                child1.y2 = y2;
+                child2 = new Cell(map, this);
+                child2.x1 = x1 + r;
+                child2.y1 = y1;
+                child2.x2 = x2;
+                child2.y2 = y2;
+            }
+            if (splitOrientation == SplitOrientation.Vertical) {
+                int r = Rng.Random.Next(height - 2 * MIN_CELL_SIZE);
+                r = r + MIN_CELL_SIZE;
+                child1 = new Cell(map, this);
+                child1.x1 = x1;
+                child1.y1 = y1;
+                child1.x2 = x2;
+                child1.y2 = y1 + r;
+                child2 = new Cell(map, this);
+                child2.x1 = x1;
+                child2.y1 = y1 + r;
+                child2.x2 = x2;
+                child2.y2 = y2;
+            }
+
+            if (child1.canSplit) child1.split();
+            if (child2.canSplit) child2.split();
+        }
+
+        #endregion
+
+        #region private methods
+
+        private SplitOrientation chooseSplit() {
+            if ((width > MIN_CELL_SIZE * 2) && !(height > MIN_CELL_SIZE * 2)) return SplitOrientation.Horizontal;
+            if ((height > MIN_CELL_SIZE * 2) && !(width > MIN_CELL_SIZE * 2)) return SplitOrientation.Vertical;
+            if ((width > MIN_CELL_SIZE * 2) && (height > MIN_CELL_SIZE * 2)) return (SplitOrientation)(Rng.Random.Next(2) + 1);
+            return SplitOrientation.None;
+        }
+
+        private Cell getSibling() {
+            if (parent == null) return null;
+            if (parent.child1 == this) return parent.child2;
+            if (parent.child2 == this) return parent.child1;
+            return null;
+        }
+
+        private void makeRooms() {
+            if (hasChildren) {
+                child1.makeRooms();
+                child2.makeRooms();
+            } else {
+                createRoom();
+            }
+        }
+
+        private void getRooms(List<Room> rooms) {
             if (hasChildren) {
                 child1.getRooms(rooms);
                 child2.getRooms(rooms);
@@ -206,7 +223,7 @@ namespace VH.Engine.Levels {
             }
         }
 
-        Room getClosestRoom(int targetX, int targetY) {
+        private Room getClosestRoom(int targetX, int targetY) {
             int minDistance = int.MaxValue;
             Room closestRoom = null;
             List<Room> rooms = new List<Room>();
@@ -227,17 +244,6 @@ namespace VH.Engine.Levels {
             if (Rng.Random.NextFloat() < HIDDEN_DOOR_RATE) return Terrain.Get("hidden-door").Character;
             else if (Rng.Random.NextFloat() < OPEN_DOOR_RATE) return Terrain.Get("open-door").Character;
             else return Terrain.Get("closed-door").Character;
-        }
-
-        public void GenerateDungeon() {
-            for (int i = x1; i <= x2; ++i) {
-                for (int j = y1; j <= y2; ++j) {
-                    map[i, j] = Terrain.Get("wall").Character;
-                }
-            }
-            split();
-            makeRooms();
-            connectRooms();
         }
 
         #endregion

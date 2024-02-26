@@ -61,6 +61,10 @@ namespace VH.Engine.World.Items {
             return element;
         }
 
+        public override string ToString() {
+            return Name;
+        }
+
         #endregion
 
     }

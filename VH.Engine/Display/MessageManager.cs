@@ -14,6 +14,7 @@ namespace VH.Engine.Display {
         #region constants
 
         private const int MESSAGES_IN_LOG = 20;
+        private const string UNKNOWN_MSG = "?????";
 
         #endregion
 
@@ -42,7 +43,9 @@ namespace VH.Engine.Display {
                 if (person == Person.Second) personAttr = "person2";
                 else personAttr = "person3";
                 string xpath = "/messages/message[@key='" + key + "']/@" + personAttr;
-                return ((XmlAttribute)doc.SelectNodes(xpath)[0]).Value;
+                XmlNodeList nodes = doc.SelectNodes(xpath);
+                if (nodes.Count > 0) return ((XmlAttribute)nodes[0]).Value;
+                return "[[[" + key + "]]]";
             }
         }
 

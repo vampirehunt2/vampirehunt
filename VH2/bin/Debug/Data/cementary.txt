@@ -51,3 +51,4 @@ aaa, Kustosz Zabity przez niedźwiedzia na poziomie Jaskinia
 aaa, Łowca Zabity przez nietoperza na poziomie Miasto
 aaa, Łowca Zabity przez  na poziomie Miasto
 aaa, Łowca Zabity przez  na poziomie Miasto
+aaa, Łowca Zabity przez ubożę na poziomie Miasto

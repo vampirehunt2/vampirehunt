@@ -65,6 +65,7 @@ namespace VH.Game.World.Beings.Ai {
         public override bool InteractWithEnvironment(Position position) {
             if (new DigAction(Being, position).Perform()) return true;
             if (new ChopAction(Being, position).Perform()) return true;
+            if (new OpenDoorAction(Being, position).Perform()) return true;
             return base.InteractWithEnvironment(position);
         }
 

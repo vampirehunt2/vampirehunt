@@ -7,10 +7,16 @@ namespace VH.Engine.Display {
 
     public class YesNoMenu: Menu {
 
+        #region fields
+
         string title;
         MessageWindow window;
         char yesChar;
         char noChar;
+
+        #endregion
+
+        #region constructors
 
         public YesNoMenu(string title, MessageWindow window, char yesChar, char noChar) {
             this.title = title;
@@ -18,6 +24,10 @@ namespace VH.Engine.Display {
             this.yesChar = yesChar;
             this.noChar = noChar;
         }
+
+        #endregion
+
+        #region public methods
 
         public override MenuResult ShowMenu() {
             window.ShowMessage(title + " " + yesChar + "/" + noChar);
@@ -32,6 +42,8 @@ namespace VH.Engine.Display {
             // should never happen
             else return MenuResult.Cancel;
         }
+
+        #endregion
 
     }
 }

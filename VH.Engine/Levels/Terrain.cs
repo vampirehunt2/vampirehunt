@@ -85,19 +85,21 @@ namespace VH.Engine.Levels {
         #region public methods
 
         public static Terrain Get(string key) {
-            return (
+            IEnumerable<Terrain> terrains = 
                 from Terrain terrain in terrainKinds
                 where terrain.Key == key
-                select terrain
-            ).Single();
+                select terrain;            
+            if (terrains.Count() >= 1) return terrains.First();
+            return new Terrain("UNKNOWN", "?");
         }
 
         public static Terrain Get(char character) {
-            return (
+            IEnumerable<Terrain> terrains =
                 from Terrain terrain in terrainKinds
                 where terrain.Character == character
-                select terrain
-            ).Single();
+                select terrain;
+            if (terrains.Count() >= 1) return terrains.First();
+            return new Terrain("UNKNOWN", "?");
         }
 
         #endregion

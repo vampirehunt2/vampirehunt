@@ -9,8 +9,10 @@ namespace VH.Engine.World.Beings {
 
     public abstract class Pc: Being {
 
+        protected string identity = "";
+
         public override string Identity {
-            get { return ""; }
+            get { return identity; }  
         }
 
         public override Person Person {

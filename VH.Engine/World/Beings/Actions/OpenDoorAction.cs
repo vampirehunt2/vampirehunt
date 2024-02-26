@@ -12,15 +12,13 @@ namespace VH.Engine.World.Beings.Actions {
 
     public class OpenDoorAction: AbstractAction {
 
-        Step direction;
-
-        public OpenDoorAction(Being performer, Step direction): base(performer) {
-            this.direction = direction;
+        private Position position;
+        public OpenDoorAction(Being performer, Position position): base(performer) {
+            this.position = position;
         }
 
         public override bool Perform() {
-            Position doorPosition = performer.Position.AddStep(direction);
-            if (GameController.Instance.Map[doorPosition] != Terrain.Get("closed-door").Character) {
+            if (GameController.Instance.Map[position] != Terrain.Get("closed-door").Character) {
                 return false;
             }
             // TODO move CanOpenDoor to Being class. Implement as return true in Pc class.
@@ -31,7 +29,7 @@ namespace VH.Engine.World.Beings.Actions {
             if (Rng.Random.Next(10) > 7) {
                 notify("stuck-door");
             } else {
-                GameController.Instance.Map[doorPosition] = Terrain.Get("open-door").Character;
+                GameController.Instance.Map[position] = Terrain.Get("open-door").Character;
                 notify("open-door");
             }
             return true;

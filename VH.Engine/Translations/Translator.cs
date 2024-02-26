@@ -50,7 +50,7 @@ namespace VH.Engine.Translations {
             get { 
                 string xpath = "/translations/entry[@key='" + key + "']/@value";
                 XmlNodeList nodes = root.SelectNodes(xpath);
-                if (nodes.Count == 0) return null;
+                if (nodes.Count == 0) return "[[[" + key + "]]]";
                 return ((XmlAttribute)nodes[0]).Value;
             }
         }

@@ -5,6 +5,7 @@ using System.Net.NetworkInformation;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using VH.Engine.Display;
 using VH.Engine.Levels;
 using VH.Engine.Random;
 using VH.Engine.World.Beings;
@@ -39,9 +40,9 @@ namespace VH.Game.World.Beings.Actions {
                 }
             }
             // moving into a closed door results in an attempt to open them
-            if (performer.CanWalkOn(Terrain.Get("open-door").Character) && controller.Map[newPosition] == Terrain.Get("closed-door").Character) {
-                return new OpenDoorAction(performer, step).Perform();
-            }
+            // if (performer.CanWalkOn(Terrain.Get("open-door").Character) && controller.Map[newPosition] == Terrain.Get("closed-door").Character) {
+            //    return new OpenDoorAction(performer, step).Perform();
+            //}
 
             if (!performer.CanWalkOn(Feature) && (Performer as ITempsBeing).Temps["blind"]) { 
                 notify("boom");
@@ -51,5 +52,18 @@ namespace VH.Game.World.Beings.Actions {
         }
 
         #endregion
+
+        #region protected methods
+
+        protected override void showItemNames() {
+            string itemNames = getItemNames();
+            if (itemNames.Length > 0 && performer.Person == Person.Second) {
+                if (Performer is ITempsBeing && (Performer as ITempsBeing).Temps["blind"]) notify("trip");
+                else controller.MessageManager.ShowDirectMessage(itemNames);
+            }
+        }
+
+        #endregion
+
     }
 }

@@ -79,17 +79,16 @@ namespace VH.Engine.World.Beings.Actions {
 
         #endregion
 
-        #region private methods
+        #region protected methods
 
-        private void showItemNames() {
+        protected virtual void showItemNames() {
             string itemNames = getItemNames();
             if (itemNames.Length > 0 && performer.Person == Person.Second) {
-                if ((Performer as ITempsBeing).Temps["blind"]) notify("trip");
-                else controller.MessageManager.ShowDirectMessage(itemNames);
+                controller.MessageManager.ShowDirectMessage(itemNames);
              }
         }
 
-        private string getItemNames() {
+        protected string getItemNames() {
             IEnumerable<Item> items = GameController.Instance.Level.GetItemsAt(performer.Position);
             StringBuilder sb = new StringBuilder();
             foreach (Item item in items) {

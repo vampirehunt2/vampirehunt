@@ -49,6 +49,7 @@
     <Compile Include="Configuration\Options.cs" />
     <Compile Include="Display\BufferedWindow.cs" />
     <Compile Include="Display\AbstractEntity.cs" />
+    <Compile Include="Display\ColorVerticalMessageWindow.cs" />
     <Compile Include="Display\CP437.cs" />
     <Compile Include="Display\ExtendedWindow.cs" />
     <Compile Include="Display\LetterMenu.cs" />

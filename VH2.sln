@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2008
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33502.453
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VH", "VH2\VH.csproj", "{7E8AC9C4-E451-4B17-9D47-75C16EF6784A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VH.Engine", "VH.Engine\VH.Engine.csproj", "{3A5CC000-FABC-4C7A-A0E9-08A2513B9A3C}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VH.Engine.VhConsole", "VH.Engine.VhConsole\VH.Engine.VhConsole.csproj", "{031B0BCC-AD1D-4D29-993A-79F1FE19EDC5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyRoguelike", "..\..\MyRoguelike\MyRoguelike\MyRoguelike.csproj", "{E7F5BF30-43EA-4FCA-A228-FAE44918A72D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,18 @@ Global
 		{031B0BCC-AD1D-4D29-993A-79F1FE19EDC5}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{031B0BCC-AD1D-4D29-993A-79F1FE19EDC5}.Release|x86.ActiveCfg = Release|Any CPU
 		{031B0BCC-AD1D-4D29-993A-79F1FE19EDC5}.Release|x86.Build.0 = Release|Any CPU
+		{E7F5BF30-43EA-4FCA-A228-FAE44918A72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7F5BF30-43EA-4FCA-A228-FAE44918A72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7F5BF30-43EA-4FCA-A228-FAE44918A72D}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{E7F5BF30-43EA-4FCA-A228-FAE44918A72D}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{E7F5BF30-43EA-4FCA-A228-FAE44918A72D}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{E7F5BF30-43EA-4FCA-A228-FAE44918A72D}.Debug|x86.Build.0 = Debug|Any CPU
+		{E7F5BF30-43EA-4FCA-A228-FAE44918A72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7F5BF30-43EA-4FCA-A228-FAE44918A72D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7F5BF30-43EA-4FCA-A228-FAE44918A72D}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{E7F5BF30-43EA-4FCA-A228-FAE44918A72D}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{E7F5BF30-43EA-4FCA-A228-FAE44918A72D}.Release|x86.ActiveCfg = Release|Any CPU
+		{E7F5BF30-43EA-4FCA-A228-FAE44918A72D}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
