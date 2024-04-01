@@ -37,7 +37,7 @@ namespace VH.Engine.Display {
 
         #region properties
 
-        public string this[string key, Person person] {
+        public virtual string this[string key, Person person] {
             get {
                 string personAttr;
                 if (person == Person.Second) personAttr = "person2";
@@ -49,7 +49,7 @@ namespace VH.Engine.Display {
             }
         }
 
-        public string MessageLog {
+        public virtual string MessageLog {
             get {
                 StringBuilder sb = new StringBuilder();
                 for (int i = 0; i < messageLog.Count; ++i) sb.Append(messageLog[i] + "\n");
@@ -57,15 +57,17 @@ namespace VH.Engine.Display {
             }
         }
 
+        protected XmlDocument Doc { get { return doc; } }  
+
         #endregion
 
         #region public methods
 
-        public void ShowMessage(string key, AbstractEntity performer, AbstractEntity target) {
+        public virtual void ShowMessage(string key, AbstractEntity performer, AbstractEntity target) {
             ShowMessage(key, performer, target, false);
         }
 
-        public void ShowMessage(string key, AbstractEntity performer, AbstractEntity target, bool force) {
+        public virtual void ShowMessage(string key, AbstractEntity performer, AbstractEntity target, bool force) {
             AbstractFieldOfVision fieldOfVision = GameController.Instance.FieldOfVision;
             if (fieldOfVision.IsInFieldOfVision(performer.Position) || force || performer.Person == Person.Second) {
                 string targetString = getTargetString(target);
@@ -82,16 +84,16 @@ namespace VH.Engine.Display {
             }
         }
 
-        public void ShowMessage(string key, AbstractEntity performer, bool force) {
+        public virtual void ShowMessage(string key, AbstractEntity performer, bool force) {
             ShowMessage(key, performer, null, force);
         }
 
-        public void ShowMessage(string key, AbstractEntity performer) {
+        public virtual void ShowMessage(string key, AbstractEntity performer) {
             ShowMessage(key, performer, null);
             GameController.Instance.Console.Refresh();
         }
 
-        public void ShowDirectMessage(string message) {
+        public virtual void ShowDirectMessage(string message) {
             window.ShowMessage(message);
             logMessage(message);
         }

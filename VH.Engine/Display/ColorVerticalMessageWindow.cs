@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace VH.Engine.Display {
     public class ColorVerticalMessageWindow : VerticalMessageWindow {
+
         public ColorVerticalMessageWindow(int x, int y, int width, int height, IConsole console): 
             base(x, y, width, height, console) {
         }
 
-        public void SetColor(ConsoleColor color) {
+        public virtual void SetColor(ConsoleColor color) {
             console.ForegroundColor = color;
         }
 

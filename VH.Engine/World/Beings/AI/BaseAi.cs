@@ -18,8 +18,6 @@ namespace VH.Engine.World.Beings.AI {
 
         #region fields
 
-        MessageWindow messageWindow = GameController.Instance.MessageWindow;
-        MessageManager messageManager = GameController.Instance.MessageManager;
         protected Pathfinder pathfinder = new SimplePathfinder();
 
         #endregion
@@ -29,6 +27,14 @@ namespace VH.Engine.World.Beings.AI {
         public BaseAi() : base() { }
 
         public BaseAi(Being being) : base(being) { }
+
+        #endregion
+
+        #region properties
+
+        protected MessageWindow messageWindow => GameController.Instance.MessageWindow;
+        protected MessageManager messageManager => GameController.Instance.MessageManager;
+      
 
         #endregion
 

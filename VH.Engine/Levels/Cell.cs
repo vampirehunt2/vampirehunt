@@ -5,7 +5,7 @@ using System.Text;
 using VH.Engine.Random;
 
 namespace VH.Engine.Levels {
-    class Cell {
+    public class Cell {
 
         #region constants
 

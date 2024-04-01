@@ -30,6 +30,7 @@ namespace VH.Engine.Display {
         #region public methods
 
         public override MenuResult ShowMenu() {
+            window.Console.ForegroundColor = ConsoleColor.Gray;
             window.ShowMessage(title + " " + yesChar + "/" + noChar);
             window.Console.Refresh();
             char z;
