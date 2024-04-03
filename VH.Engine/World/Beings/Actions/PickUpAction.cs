@@ -40,7 +40,7 @@ namespace VH.Engine.World.Beings.Actions {
             return true;
         }
 
-        public bool PickUp() {
+        public virtual bool PickUp() {
             BackPack backpack = ((IBackPackBeing)performer).BackPack;
             if (backpack.Full) {
                 notify("backpack-full", item);

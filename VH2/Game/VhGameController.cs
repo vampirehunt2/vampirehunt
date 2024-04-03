@@ -326,7 +326,7 @@ namespace VH.Game {
             messageWindow.ShowMessage(((IBackPackBeing)pc).BackPack.ToString());
         }
 
-        private void showHelp() {
+        protected void showHelp() {
             show(Keybindings.ToString());
         }
 

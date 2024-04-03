@@ -19,22 +19,43 @@ namespace VH.Game.World.Beings.Actions {
         public VhShootAction(Being performer): base(performer, 10) {
         }
 
+        public override MissleWeapon MissleWeapon { 
+            get {
+                if (!(performer is IEquipmentBeing)) return null;
+                EquipmentSlot missleWeaponSlot = (performer as IEquipmentBeing).Equipment[WeaponSlot.ID];
+                if (missleWeaponSlot == null) return null;
+                Item missleWeapon = missleWeaponSlot.Item;
+                if (missleWeapon == null || !(missleWeapon is MissleWeapon)) {
+                    return null;
+                }
+                return (MissleWeapon)missleWeapon;
+            }
+        }
+
+        public override Item Missle {
+            get {
+                if (!(performer is IEquipmentBeing)) return null;
+                MissleSlot missleSlot = (MissleSlot)(performer as IEquipmentBeing).Equipment[MissleSlot.ID];
+                if (missleSlot == null) return null;
+                missle = missleSlot.Item as Ammo;
+                if (missle == null || missle.Number == 0) {
+                    return null;
+                }
+                return missle;
+            }
+        }
+
         public override bool Perform() {
-            if (!(performer is IEquipmentBeing)) return false;
-            EquipmentSlot missleWeaponSlot = (performer as IEquipmentBeing).Equipment[WeaponSlot.ID];
-            if (missleWeaponSlot == null) return false;
-            Item missleWeapon = missleWeaponSlot.Item;
-            if (missleWeapon == null || !(missleWeapon is MissleWeapon)) {
+            if (MissleWeapon == null) {
                 notify("no-missle-weapon");
                 return false;
             }
-            MissleSlot missleSlot = (MissleSlot)(performer as IEquipmentBeing).Equipment[MissleSlot.ID];
-            if (missleSlot == null) return false;
-            missle = missleSlot.Item as Ammo;
-            if (missle == null || missle.Number == 0) {
+
+            if (Missle == null) {
                 notify("no-missle");
                 return false;
             }
+
             AbstractAttackAction attackAction = new MissleAttackAction(performer);
             Attack = attackAction;
             

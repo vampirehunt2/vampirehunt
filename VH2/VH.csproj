@@ -133,7 +133,7 @@
     <Compile Include="Game\World\Items\MagicalItem.cs" />
     <Compile Include="Game\World\Items\Weapons\Bow.cs" />
     <Compile Include="Game\World\Items\Weapons\Firearm.cs" />
-    <Compile Include="Game\World\Items\Weapons\MissleWeapon.cs" />
+    <Compile Include="Game\World\Items\Weapons\VhMissleWeapon.cs" />
     <Compile Include="Game\World\Items\Necklaces\Necklace.cs" />
     <Compile Include="Game\World\Items\NonEquipableItem.cs" />
     <Compile Include="Game\World\Items\Potions\Potion.cs" />

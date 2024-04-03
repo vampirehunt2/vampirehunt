@@ -7,13 +7,13 @@ using VH.Engine.World.Beings;
 using VH.Engine.World.Items;
 
 namespace VH.Engine.World.Items.Weapons {
-    public class MissleWeapon: Weapon {
+    public class VhMissleWeapon: MissleWeapon {
 
         public override string ToString() {
             return Name + " +" + Attack;
         }
 
-        public virtual bool IsCompatibleMissle(Item item) {
+        public override bool IsCompatibleMissle(Item item) {
             return true;
         }
 

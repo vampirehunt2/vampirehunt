@@ -5,6 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using VH.Engine.Game;
 using VH.Engine.Levels;
+using VH.Engine.World.Items;
+using VH.Engine.World.Items.Weapons;
 
 namespace VH.Engine.World.Beings.Actions {
     public class ShootAction : AbstractAction {
@@ -32,6 +34,14 @@ namespace VH.Engine.World.Beings.Actions {
             get { return attack; } 
             set { attack = value; }
         }   
+
+        public virtual MissleWeapon MissleWeapon { 
+            get { return null; } 
+        }
+
+        public virtual Item Missle {
+            get { return null; }
+        }
 
         #endregion
 
