@@ -70,7 +70,7 @@ namespace VH.Engine.Display {
         public virtual void ShowMessage(string key, AbstractEntity performer, AbstractEntity target, bool force) {
             AbstractFieldOfVision fieldOfVision = GameController.Instance.FieldOfVision;
             if (fieldOfVision.IsInFieldOfVision(performer.Position) || force || performer.Person == Person.Second) {
-                string targetString = getTargetString(target);
+                string targetString = getTargetString(target, performer.Person == Person.Second);
                 string message = getMessage(performer.Person, key, performer.Identity,
                     target != null ? targetString : "");
                 window.ShowMessage(message);
@@ -78,7 +78,7 @@ namespace VH.Engine.Display {
             }
             if (!fieldOfVision.IsInFieldOfVision(performer.Position)
                     && performer.Person == Person.Third && target != null && target.Person == Person.Second) {
-                string message = getMessage(performer.Person, key, "coś", target.Accusativ);
+                string message = getMessage(performer.Person, key, Translations.Translator.Instance["something"], target.Accusativ);
                 window.ShowMessage(message);
                 logMessage(message);
             }
@@ -124,12 +124,12 @@ namespace VH.Engine.Display {
             while (messageLog.Count > MESSAGES_IN_LOG) messageLog.RemoveAt(0);
         }
 
-        private string getTargetString(AbstractEntity target) {
+        private string getTargetString(AbstractEntity target, bool secondPerson) {
             AbstractFieldOfVision fieldOfVision = GameController.Instance.FieldOfVision;
-            if (target != null && (fieldOfVision.IsInFieldOfVision(target.Position) || target.Person == Person.Second)) {
+            if (target != null && (fieldOfVision.IsInFieldOfVision(target.Position) || target.Person == Person.Second || secondPerson)) {
                 return target.Accusativ;
             } else {
-                return "coś";
+                return Translations.Translator.Instance["something"];
             }
         }
 

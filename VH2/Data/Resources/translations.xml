@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <translations>
 	<entry key="you" value="cię" />
+	<entry key="something" value="coś" />
 
 	<entry key="pick-up" value="Podnieś:"/>
 	<entry key="backpack" value="Plecak:"/>
