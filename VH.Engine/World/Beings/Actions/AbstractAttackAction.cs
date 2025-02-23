@@ -18,7 +18,6 @@ namespace VH.Engine.World.Beings.Actions {
 
         #endregion
 
-
         #region constructors
         protected AbstractAttackAction(Being performer) : base(performer) {
         }
